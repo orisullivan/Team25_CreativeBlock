@@ -1,0 +1,78 @@
+ul.topnav
+{
+    display : flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e0bbe4;
+    height: 100px;
+    border-radius: 25px;
+    border-style: dashed;
+    
+}
+ul.topnav h1
+{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #957dad ;
+}
+ul.topnav li a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    border-radius: 25px;
+    border-style: dashed;
+    box-shadow: 5px 5px 5px #957dad;
+}
+ul.topnav li a:hover
+{
+    background-color: #957dad;
+    color: black;
+}
+#UsernameBox
+{
+    width: 100px;
+    height: 20px;
+    margin-top: 35px;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 25px;
+
+}
+#Username
+{
+  margin: 0;
+  line-height: 1.5;
+  font-size: min(
+    clamp(1rem, (100px - 1rem * 2) / 15, 2.5rem),
+    clamp(1rem, (20px - 1rem * 2) / (4 * 1.5), 2.5rem)
+  );
+}
+ul.topnav img
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-radius: 25px;
+    border-color: #957dad;
+    border-style: solid;
+    border-width: 2px;
+    height: 75px;
+
+}
+body 
+{
+    background-color: #957dad;
+}      
