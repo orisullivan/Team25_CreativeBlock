@@ -5,28 +5,59 @@ ul.topnav
     margin: 0;
     padding: 0;
     background-color: #e0bbe4;
-    height: 100px;
+    height: 120px;
     border-radius: 25px;
     border-style: dashed;
     
 }
-ul.topnav h1
+#Logo
 {
-    margin: 20px;
-    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    height: 100px;
+    border-radius: 25px;
+}
+#TitleAndSloganBox
+{
+    display: inline-block;
     align-items: center;
+    justify-items: center;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Title
+{
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad ;
+    text-shadow: 5px 5px 5px #957dad;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
-ul.topnav li a 
+#Slogan
+{
+    font-size: medium;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #957dad;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+ul.PageLinks
+{
+    display : flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.PageLinks li a 
 {
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 10px;
     margin-right: 10px;
@@ -36,41 +67,35 @@ ul.topnav li a
     border-style: dashed;
     box-shadow: 5px 5px 5px #957dad;
 }
-ul.topnav li a:hover
+ul.PageLinks li a:hover
 {
     background-color: #957dad;
-    color: black;
+    color: white;
 }
-#UsernameBox
+#ProfileBox
 {
-    width: 100px;
-    height: 20px;
-    margin-top: 35px;
-    overflow: hidden;
-    padding: 5px;
-    border-radius: 25px;
-
-}
-#Username
-{
-  margin: 0;
-  line-height: 1.5;
-  font-size: min(
-    clamp(1rem, (100px - 1rem * 2) / 15, 2.5rem),
-    clamp(1rem, (20px - 1rem * 2) / (4 * 1.5), 2.5rem)
-  );
-}
-ul.topnav img
-{
+    height: 100px;
+    display: inline-block;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 5px;
+}
+#pfp
+{
+    height: 80px;
     border-radius: 25px;
     border-color: #957dad;
     border-style: solid;
     border-width: 2px;
-    height: 75px;
+    margin-bottom: 0px;
 
+}
+#Username
+{
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, sans-serif; 
 }
 body 
 {
