@@ -1,3 +1,11 @@
+html
+{
+    cursor: url('scissors1.png'), auto;
+}
+html:active
+{
+    cursor: url('scissors2.png'), auto;
+}
 ul.topnav
 {
     display : flex;
@@ -13,7 +21,7 @@ ul.topnav
 #Logo
 {
     margin: 10px 10px 10px 10px;
-    height: 100px;
+    height: 110px;
     border-radius: 25px;
 }
 #TitleAndSloganBox
@@ -71,6 +79,14 @@ ul.PageLinks li a:hover
 {
     background-color: #957dad;
     color: white;
+}
+li a:hover
+{
+    cursor: url('scissors1.png'), auto;
+}
+li a:hover:active
+{
+    cursor: url('scissors2.png'), auto;
 }
 #ProfileBox
 {
