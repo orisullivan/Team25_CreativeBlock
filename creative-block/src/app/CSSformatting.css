@@ -7,7 +7,7 @@ ul.topnav
     background-color: #e0bbe4;
     height: 135px;
     border-radius: 25px;
-    border: dashed 2px #000;
+    border: dashed 3px #000;
     
 }
 #Logo
@@ -44,6 +44,7 @@ ul.topnav
     text-shadow: 5px 5px 5px #957dad;
     margin-bottom: 0px;
     margin-top: 0px;
+    font-weight: 900;
 }
 ul.PageLinks
 {
@@ -65,7 +66,7 @@ ul.PageLinks li a
     margin-right: 10px;
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    border: dashed 2px #000;
+    border: dashed 3px #000;
     box-shadow: 5px 5px 5px #957dad;
 }
 ul.PageLinks li a:hover
