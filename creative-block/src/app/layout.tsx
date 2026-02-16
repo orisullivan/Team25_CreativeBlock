@@ -28,10 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header /> {/* Your header is now above the main content */}
-        <main>{children}</main> {/* Page content renders here */}
+        <Header /> 
+        <main>{children}</main> 
       </body>
     </html>
   );
 }
-
