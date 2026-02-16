@@ -1,5 +1,5 @@
 // src/components/Header.tsx
-import "./CSSFormatting.css"
+import "../app/globals.css"
 
 const Header = () => {
   return (
