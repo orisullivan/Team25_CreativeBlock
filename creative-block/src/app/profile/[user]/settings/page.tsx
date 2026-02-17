@@ -2,22 +2,45 @@ import "../../../globals.css";
 import "./CSSformatting.css"
 import Image from "next/image";
 import Link from 'next/link';
-export default function Home() {
+import { getUserDetails, getUserIDList } from '../../../../lib/userInfo';
+
+interface UserProps {
+  params: Promise<{ user: string }>;
+}
+
+export async function GetStaticPaths() {
+  const paths = await getUserIDList();
+  return {
+    paths, fallback: false,
+ };
+}
+
+export async function GetStaticProps({ params } ) {
+  const userData = await getUserDetails(params);
+  return {
+    props: {
+      userData,
+    },
+  };
+}
+
+
+export default function Home(userData) {
   return (
     <ul>
-       <div className = "SidebarWrapper">
-            <div className = "SidebarMain"> 
-                <h1> User Details </h1><Link href="../">TestLink</Link>
-                <h1> Preference Settings </h1><Link href="./">Back to home</Link>
-                <h1 > Material List </h1>
-                <h1 > My Posts </h1>
+       <ul className = "SidebarWrapper">
+            <div id = "SidebarMain">  
+                <h1> <Link href={`../${userData.id}/`}>User Details</Link> </h1>
+                <h1> Preference Settings </h1>
+                <h1> Material List </h1>
+                <h1> My Posts </h1>
                 <h1> Tip Jar </h1>
             </div>
-            <div className="SidebarHelpText">
+            <div id = "SidebarHelpText">
                 <h1> Help </h1>
                 <h1> Report </h1>
             </div>
-        </div>
+        </ul>
         <div className="MainBodyRegion">
         <a href="#section1" className="btn">Section 1</a>
         <a href="#section2" className="btn">Section 2</a>
