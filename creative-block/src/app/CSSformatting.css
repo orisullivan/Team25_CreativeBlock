@@ -1,0 +1,112 @@
+ul.topnav
+{
+    display : flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #e0bbe4;
+    height: 135px;
+    border-radius: 25px;
+    border: dashed 3px #000;
+    
+}
+#Logo
+{
+    margin: 10px 10px 10px 10px;
+    height: 100px;
+    border-radius: 25px;
+}
+.TitleAndSloganBox
+{
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+#Title
+{
+    font-size: xxx-large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #957dad;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: 900;
+}
+#Slogan
+{
+    font-size: medium;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #957dad;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 900;
+}
+ul.PageLinks
+{
+    display : flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.PageLinks li a 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    border: dashed 3px #000;
+    box-shadow: 5px 5px 5px #957dad;
+}
+ul.PageLinks li a:hover
+{
+    background-color: #957dad;
+    color: white;
+}
+#ProfileBox
+{
+    height: 100px;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    right: 15;
+
+}
+#pfp
+{
+    height: 80px;
+    border-radius: 25px;
+    border-color: #957dad;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 0px;
+
+}
+#Username
+{
+    text-align: center;
+    margin-top: 0px;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, sans-serif; 
+}
+body 
+{
+    background-color: #957dad;
+}      
+
+.right-aligned {
+  margin-left: auto; /* Pushes the item to the right, taking up available space */
+}
