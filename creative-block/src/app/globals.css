@@ -23,18 +23,20 @@ ul.topnav
 {
     display : flex;
     list-style-type: none;
-    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
     padding: 0;
     background-color: #e0bbe4;
-    height: 120px;
+    height: 135px;
     border-radius: 25px;
-    border-style: dashed;
+    border: dashed 3px #000;
     
 }
 #Logo
 {
-    margin: 10px 10px 10px 10px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 25px;
 }
 #TitleAndSloganBox
@@ -106,7 +108,7 @@ ul.PageLinks li a:hover
     border-radius: 25px;
     border-color: #957dad;
     border-style: solid;
-    border-width: 2px;
+    border-width: 2px; 
     margin-bottom: 0px;
 
 }
