@@ -1,30 +1,11 @@
-html
-{
-    cursor: url('scissors1.png'), auto;
-}
-html:active
-{
-    cursor: url('scissors2.png'), auto;
-}
-ul.topnav
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #e0bbe4;
-    height: 120px;
-    border-radius: 25px;
-    border-style: dashed;
-    
-}
+
 #Logo
 {
     margin: 10px 10px 10px 10px;
-    height: 110px;
+    height: 100px;
     border-radius: 25px;
 }
-#TitleAndSloganBox
+.TitleAndSloganBox
 {
     display: inline-block;
     align-items: center;
@@ -33,6 +14,7 @@ ul.topnav
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    color: black;
 }
 
 #Title
@@ -42,6 +24,7 @@ ul.topnav
     text-shadow: 5px 5px 5px #957dad;
     margin-top: 10px;
     margin-bottom: 0px;
+    font-weight: 900;
 }
 #Slogan
 {
@@ -50,6 +33,7 @@ ul.topnav
     text-shadow: 5px 5px 5px #957dad;
     margin-bottom: 0px;
     margin-top: 0px;
+    font-weight: 900;
 }
 ul.PageLinks
 {
@@ -71,8 +55,7 @@ ul.PageLinks li a
     margin-right: 10px;
     text-decoration: none;
     font-family: Verdana, sans-serif;
-    border-radius: 25px;
-    border-style: dashed;
+    border: dashed 3px #000;
     box-shadow: 5px 5px 5px #957dad;
 }
 ul.PageLinks li a:hover
@@ -80,20 +63,15 @@ ul.PageLinks li a:hover
     background-color: #957dad;
     color: white;
 }
-li a:hover
-{
-    cursor: url('scissors1.png'), auto;
-}
-li a:hover:active
-{
-    cursor: url('scissors2.png'), auto;
-}
 #ProfileBox
 {
     height: 100px;
     display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 15px;
+    margin-left: 15px;
+    position: absolute;
+    right: 15;
+
 }
 #pfp
 {
@@ -117,3 +95,7 @@ body
 {
     background-color: #957dad;
 }      
+
+.right-aligned {
+  margin-left: auto; /* Pushes the item to the right, taking up available space */
+}
