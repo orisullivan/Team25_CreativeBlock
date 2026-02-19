@@ -1,42 +1,27 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html
+{
+    cursor: url('scissors1.png'), auto;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-verdana-sans);
-  --font-mono: var(--font-geist-mono);
+html:active
+{
+    cursor: url('scissors2.png'), auto;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 ul.topnav
 {
     display : flex;
     list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
+    margin: 0;
     padding: 0;
     background-color: #e0bbe4;
-    height: 135px;
+    height: 120px;
     border-radius: 25px;
-    border: dashed 3px #000;
+    border-style: dashed;
     
 }
 #Logo
 {
-    width: 150px;
-    height: 150px;
+    margin: 10px 10px 10px 10px;
+    height: 110px;
     border-radius: 25px;
 }
 #TitleAndSloganBox
@@ -95,6 +80,14 @@ ul.PageLinks li a:hover
     background-color: #957dad;
     color: white;
 }
+li a:hover
+{
+    cursor: url('scissors1.png'), auto;
+}
+li a:hover:active
+{
+    cursor: url('scissors2.png'), auto;
+}
 #ProfileBox
 {
     height: 100px;
@@ -108,7 +101,7 @@ ul.PageLinks li a:hover
     border-radius: 25px;
     border-color: #957dad;
     border-style: solid;
-    border-width: 2px; 
+    border-width: 2px;
     margin-bottom: 0px;
 
 }

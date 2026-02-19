@@ -24,9 +24,6 @@ export async function GetStaticProps({ params } ) {
   };
 }
 
-function handleClick() {
-    console.log("increment like count")
-  }
 
 export default function Home(userData) {
   return (
@@ -45,11 +42,10 @@ export default function Home(userData) {
             </div>
         </ul>
         <div className="MainBodyRegion">
-        <h1>User Settings</h1>
-        <h1>Post preferences</h1>   
-        <h3>Allow comments: </h3> 
-        </div>
-<div id="status-text">OFF</div>
+        <h1>Material List</h1>
+        <h1>Yarns</h1>
+        <h1>Fabrics</h1>
+    </div>
     <div className="MainBodyRegion">
     <div className="section one" id="section1">
         Section 1: Welcome to the first section!

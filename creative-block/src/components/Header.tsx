@@ -1,12 +1,11 @@
 // src/components/Header.tsx
 import "../app/globals.css"
-
 const Header = () => {
   return (
     
     <header>
         <ul className = "topnav">
-        <img src = "funy squirrel.webp" id = "Logo"></img>
+        <img src = "/testLogo.png" id = "Logo"></img>
         <div className = "TitleAndSloganBox">
             <h1 id = "Title"> The Creative Block </h1>
             <h2 id = "Slogan"> Placeholder for a Slogan</h2>

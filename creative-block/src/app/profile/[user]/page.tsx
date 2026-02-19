@@ -33,9 +33,9 @@ export default function Home( userData ){
                 <div id = "SidebarMain"> 
                     <h1> User Details </h1>
                     <h1> <Link href={`${userData.id}/settings`}>Preference Settings</Link></h1>
-                    <h1> Material List </h1>
-                    <h1> My Posts </h1>
-                    <h1> Tip Jar </h1>
+                    <h1> <Link href={`${userData.id}/materials`}> Material List</Link></h1>
+                    <h1> <Link href={`${userData.id}/posts`}> My Posts </Link></h1>
+                    <h1> <Link href={`${userData.id}/tipjar`}> Tip Jar </Link></h1>
                 </div>
                 <div id = "SidebarHelpText">
                     <h1> Help </h1>
@@ -58,7 +58,7 @@ export default function Home( userData ){
                     <h1>TIP JAR</h1>
                     <p>___________________________________________________________________</p>
                     <h1>Account Updates</h1>
-                    
+
                 </div>
 
         </a></li>
