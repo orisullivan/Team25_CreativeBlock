@@ -1,33 +1,11 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-verdana-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html
 {
-    cursor: url('C:/scissors1.png'), auto;
+    cursor: url('/scissors1.png'), auto;
 }
 html:active
 {
     cursor: url('/scissors2.png'), auto;
 }
-
 ul.topnav
 {
     display : flex;
@@ -36,16 +14,18 @@ ul.topnav
     margin-right: 5px;
     margin-top: 5px;
     padding: 0;
-    background-color: #e0bbe4;
+    background-color: #fec8d8;
     height: 135px;
     border-radius: 25px;
-    border: dashed 3px #000;
+    border-style: dashed;
     
 }
+
 #Logo
 {
-    width: 150px;
-    height: 150px;
+    margin-top: 20px;
+    width: 140x;
+    height: 100px;
     border-radius: 25px;
 }
 #TitleAndSloganBox
@@ -63,15 +43,15 @@ ul.topnav
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-top: 10px;
+    text-shadow: 5px 5px 5px #85586f;
+    margin-top: 8px;
     margin-bottom: 0px;
 }
 #Slogan
 {
     font-size: medium;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
+    text-shadow: 5px 5px 5px #85586f;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -97,12 +77,32 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #957dad;
+    box-shadow: 5px 5px 5px #85586f;
+}
+#GoToForum
+{
+    background-color: #e0bbe4;
+}
+#GoToPatternSearch
+{
+    background-color: #fec8d8;
+}
+#GoToMaterialSearch
+{
+    background-color: #d6efed;
 }
 ul.PageLinks li a:hover
 {
     background-color: #957dad;
     color: white;
+}
+li a:hover
+{
+    cursor: url('/scissors1.png'), auto;
+}
+li a:hover:active
+{
+    cursor: url('/scissors2.png'), auto;
 }
 #ProfileBox
 {
@@ -115,9 +115,9 @@ ul.PageLinks li a:hover
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #957dad;
+    border-color: #85586f;
     border-style: solid;
-    border-width: 2px; 
+    border-width: 2px;
     margin-bottom: 0px;
 
 }
@@ -131,27 +131,54 @@ ul.PageLinks li a:hover
 }
 body 
 {
-    background-color: #957dad;
-}      
-
-ul.topnav
+    background-color: #85586f;
+}
+#Page
+{
+    display:inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+ul.PageLayout
 {
     display : flex;
     list-style-type: none;
-    margin: 0;
+    margin: 5px;
     padding: 0;
-    background-color: #e0bbe4;
-    height: 120px;
+    background-color: #fec8d8;
+    height: 1200px;
+    width: 85vmax;
     border-radius: 25px;
     border-style: dashed;
-    
+}
+ul.PageLayout h1
+{
+    font-size: xxx-large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #85586f;
+}
+ul.PageLayout h2
+{
+    font-size: large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #85586f;
 }
 
-li a:hover
+#AdSpace
 {
-    cursor: url('/scissors1.png'), auto;
+    list-style-type: none;
+    background-color: #fec8d8;
+    height: 1200px;
+    width: 15vmax;
+    margin: 5px;
+    border-radius: 25px;
+    border-style: dashed;
 }
-li a:hover:active
+#AdTitle
 {
-    cursor: url('/scissors2.png'), auto;
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #85586f;
+    width: 190px;
 }
