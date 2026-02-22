@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 html
 {
     cursor: url('/scissors1.png'), auto;
@@ -8,7 +6,6 @@ html:active
 {
     cursor: url('/scissors2.png'), auto;
 }
-
 ul.topnav
 {
     display : flex;
@@ -17,16 +14,17 @@ ul.topnav
     margin-right: 5px;
     margin-top: 5px;
     padding: 0;
-    background-color: #e0bbe4;
+    background-color: #d6efed;
     height: 135px;
     border-radius: 25px;
-    border: dashed 3px #000;
+    border-style: dashed;
     
 }
 #Logo
 {
-    width: 150px;
-    height: 150px;
+    margin-top: 20px;
+    width: 140x;
+    height: 100px;
     border-radius: 25px;
 }
 #TitleAndSloganBox
@@ -44,15 +42,15 @@ ul.topnav
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-top: 10px;
+    text-shadow: 5px 5px 5px #85586f;
+    margin-top: 8px;
     margin-bottom: 0px;
 }
 #Slogan
 {
     font-size: medium;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
+    text-shadow: 5px 5px 5px #898aa6;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -78,7 +76,7 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #957dad;
+    box-shadow: 5px 5px 5px #898aa6;
 }
 #GoToForum
 {
@@ -116,9 +114,9 @@ li a:hover:active
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #957dad;
+    border-color: #898aa6;
     border-style: solid;
-    border-width: 2px; 
+    border-width: 2px;
     margin-bottom: 0px;
 
 }
@@ -132,20 +130,7 @@ li a:hover:active
 }
 body 
 {
-    background-color: #e0bbe4;
-}      
-
-ul.topnav
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #957dad;
-    height: 120px;
-    border-radius: 25px;
-    border-style: dashed;
-    
+    background-color: #898aa6;
 }
 #Page
 {
@@ -153,11 +138,46 @@ ul.topnav
     width: 100%;
     justify-content: space-between;
 }
-li a:hover
+ul.PageLayout
 {
-    cursor: url('/scissors1.png'), auto;
+    display : flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+    background-color: #d6efed;
+    height: 1200px;
+    width: 85vmax;
+    border-radius: 25px;
+    border-style: dashed;
 }
-li a:hover:active
+ul.PageLayout h1
 {
-    cursor: url('/scissors2.png'), auto;
+    font-size: xxx-large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #898aa6;
+}
+ul.PageLayout h2
+{
+    font-size: large;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #898aa6;
+}
+
+#AdSpace
+{
+    list-style-type: none;
+    background-color: #d6efed;
+    height: 1200px;
+    width: 15vmax;
+    margin: 5px;
+    border-radius: 25px;
+    border-style: dashed;
+}
+#AdTitle
+{
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #898aa6;
+    width: 190px;
 }

@@ -1,5 +1,5 @@
 import "../../globals.css";
-import "./CSSFormattingPatternSearching.css"
+import "./CSSFormattingMaterialSearching.css"
 
 
 export default function RootLayout({

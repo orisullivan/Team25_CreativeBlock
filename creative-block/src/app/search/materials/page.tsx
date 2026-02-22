@@ -1,5 +1,5 @@
 import "../../globals.css";
-import "./CSSFormattingPatternSearching.css";
+import "./CSSFormattingMaterialSearching.css";
 import Link from 'next/link';
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         </a></li>
     </ul>
     </header>
-   <div>
+    <body>
         <div id = "Page">
         <ul className = "PageLayout">
         </ul>
@@ -33,6 +33,7 @@ export default function Home() {
             <h2 id = "AdTitle"> Advertisements </h2>
         </div>
         </div>
+    </body>
     </div>
-    </div>
-)}
+
+  )}
