@@ -11,9 +11,9 @@ const Header = () => {
             <h2 id = "Slogan"> Placeholder for a Slogan</h2>
         </div>
         <ul className = "PageLinks">
-            <li> <a href = "./forum" id = "GoToForum">Forum</a></li>
-            <li><a href = "./patterns" id = "GoToPatternSearch">Pattern Search</a></li>
-            <li> <a href = "./materials" id = "GoToMaterialSearch">Material Search</a></li>
+            <li> <a href = "/search/forum" id = "GoToForum">Forum</a></li>
+            <li><a href = "/search/patterns" id = "GoToPatternSearch">Pattern Search</a></li>
+            <li> <a href = "/search/materials" id = "GoToMaterialSearch">Material Search</a></li>
         </ul>
         <li> <a href = "#">
             <div id = "ProfileBox">

@@ -17,7 +17,7 @@ ul.topnav
     margin-right: 5px;
     margin-top: 5px;
     padding: 0;
-    background-color: #e0bbe4;
+    background-color: #c9bbcf;
     height: 135px;
     border-radius: 25px;
     border: dashed 3px #000;
@@ -135,29 +135,10 @@ body
     background-color: #e0bbe4;
 }      
 
-ul.topnav
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #957dad;
-    height: 120px;
-    border-radius: 25px;
-    border-style: dashed;
-    
-}
 #Page
 {
     display:inline-flex;
     width: 100%;
     justify-content: space-between;
 }
-li a:hover
-{
-    cursor: url('/scissors1.png'), auto;
-}
-li a:hover:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
+
