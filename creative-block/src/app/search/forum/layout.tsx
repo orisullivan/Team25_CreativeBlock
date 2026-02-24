@@ -1,6 +1,6 @@
 import "../../globals.css";
-import "./CSSformatting.css";
-import Header from '../../../components/Header';
+import "./CSSFormattingForum.css";
+
 
 export default function RootLayout({
   children,
@@ -8,9 +8,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <div>
-        <Header />
+      <body>
         <main>{children}</main> 
-      </div>
+      </body>
+
   );
 }
