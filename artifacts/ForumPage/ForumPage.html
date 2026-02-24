@@ -12,11 +12,11 @@
             <h2 id = "Slogan"> Placeholder for a Slogan</h2>
         </div>
         <ul class = "PageLinks">
-            <li> <a href = "#" id = "GoToForum">Forum</a></li>
-            <li><a href = "#" id = "GoToPatternSearch">Pattern Search</a></li>
-            <li> <a href = "#" id = "GoToMaterialSearch">Material Search</a></li>
+            <li> <a href = "ForumPage.html" id = "GoToForum">Forum</a></li>
+            <li><a href = "PatternSearchingPage.html" id = "GoToPatternSearch">Pattern Search</a></li>
+            <li> <a href = "MaterialSearchingPage.html" id = "GoToMaterialSearch">Material Search</a></li>
         </ul>
-        <li> <a href = "#">
+        <li> <a href = "UserPage.html">
             <div id = "ProfileBox">
                 <img src = "guest pfp.webp" id = "pfp">
                 <p id = "Username"> Guest</p>
@@ -33,16 +33,36 @@
                 <form>
                     <input type="text" id = "SearchBar">
                 </form>
+                <button> Search! </button>
                 <h2> Filter/Sort By: </h2>
+                <p> Date Added: </p>
+                <p> Tags: </p>
+                <button> Search!</button>
             </div>
             <div id = "Entries">
-                <h1> Entries </h1>
             </div>
         </ul>
         <div id = "AdSpace">
             <h2 id = "AdTitle"> Advertisements </h2>
         </div>
         </div>
+        <template id = "Entry">
+        <div class = "ForumEntry">
+                        <div class = "InfoWTitle">
+                            <h2 class = "EntryTitle"></h2>
+                                <div class = "Info">
+                                  <div> <p>By:</p>  <p class = "Author"> </p> </div>
+                                  <div><p>Added On:</p><p class = "Date"></p> </div>
+                                  <div><p>Tags:</p><p class = "Tags"></p></div>
+                                  <div><p>Comments:</p><p class = "Comments"></p></div>
+                                </div>    
+                        </div>
+                                <div id = "Content">
+                                    <p> Description:</p><p class = "Description"></p>
+                                </div>
+                    </div>
+        </template>
+        <script src = "ForumScript.js"></script>
     </body>
     
 </html>

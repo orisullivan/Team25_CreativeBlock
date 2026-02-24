@@ -165,32 +165,64 @@ ul.PageLayout h2
     border-right: #957dad;
     border-right-style: dashed;
 }
+#Entries
+{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
 .ForumEntry
 {
-   color: black;
   background-color:#957dad;
-  width: 780px;
-  height: 200px;
-  margin: 10px;
+  height: 240px;
   border-radius: 25px;
+  border-style: solid;
+  border-color: #957dad;
+  border-width: 5px;
+  width: 700px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
 }
-#Info
+
+.InfoWTitle
 {
-    display: flex;
+    display: block;
+    height: 90px;
     background-color: #e0bbe4;
-    height: 50px;
     border-radius: 25px;
-    border-color: #957dad;
     border-style: dashed;
+    border-color:#957dad;
+    border-bottom-style: none;
+    padding: 0px;
 }
-#Content
+.EntryTitle
 {
+    height: 10px;
+    margin-left: 10px;
+}
+.Info
+{
+    display: inline-flex;
+    height: 40px;
+}
+.Info div
+{
+    display: inline-flex;
+    width: fit-content;
+    max-width: 175px;
+    margin-left: 15px;
+}
+.ForumEntry #Content
+{
+    height: 125px;
     background-color: #e0bbe4;
-    height: 150px;
     border-radius: 25px;
     border-style: dashed;
-    border-color: #957dad;
-    border-top: #e0bbe4;
+    border-color:#957dad;
+    padding: 10px;
+    overflow: hidden;
 }
 #AdSpace
 {
