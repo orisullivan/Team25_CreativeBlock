@@ -15,7 +15,7 @@ export default function Home() {
 
 <body>
     <div className="wrapper">
-        <form action="">
+        <form action="./search/forum">
             <h1>Welcome to the Creative Block!</h1>
             <div className="input-box">
                 <input type="text" placeholder="   Username" required/>
@@ -29,10 +29,10 @@ export default function Home() {
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" className="btn">Login</button>
+            <button type="submit" className="btn" > Login</button>
 
             <div className="register-link">
-                <p>Don't have an account? <a href="#">Register</a></p>
+                <p>Don't have an account? <a href="./login/newuser">Register</a></p>
             </div>
         </form>
     </div>

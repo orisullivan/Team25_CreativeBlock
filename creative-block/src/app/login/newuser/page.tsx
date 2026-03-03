@@ -15,7 +15,7 @@ export default function Home() {
 
 <body>
     <div className="wrapper">
-        <form action="">
+        <form action="../search/forum">
             <h1>Create a New Account</h1>
             <div className="input-box">
                 <input type="email" placeholder="   Email" required/>
@@ -32,7 +32,7 @@ export default function Home() {
 
             <button type="submit" className="btn">Create Account</button>
             <div className="register-link">
-                <p>Already have an account? <a href="#">Login</a></p>
+                <p>Already have an account? <a href="../login">Login</a></p>
             </div>
         </form>
     </div>
