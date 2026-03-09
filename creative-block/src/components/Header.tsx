@@ -1,6 +1,24 @@
-// src/components/Header.tsx
+// src/
+// components/Header.tsx
+"use client"
+import { useSession, signIn, signOut } from 'next-auth/react'
+import { SessionProvider } from "next-auth/react";
 import "../app/globals.css"
+
+
+
 const Header = () => {
+    const handleSignin = (e) => {
+         e.preventDefault()
+         signIn()
+    }    
+    const handleSignout = (e) => {
+         e.preventDefault()
+         signOut()
+    }
+
+    
+    const { data: session } = useSession();
   return (
     
     <header>
@@ -19,6 +37,8 @@ const Header = () => {
             <div id = "ProfileBox">
                 <img src = "guest pfp.webp" id = "pfp"/>
                 <p id = "Username"> Guest</p>
+               {session && <a href="#" onClick={handleSignout} className="btn-signin">Sign out</a>  } 
+                {!session && <a href="#" onClick={handleSignin}  className="btn-signin">Sign in</a>  } 
             </div>
         </a></li>
     </ul>
