@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> The Creative Block </title>
+        <link rel = "stylesheet" href = "CSSFormatting.css">
+        <link rel = "stylesheet" href = "CSSFormattingForum.css">
+    </head>
+    <header>
+        <ul class = "topnav">
+        <img src = "Logo.PNG" id = "Logo">
+        <div id = "TitleAndSloganBox">
+            <h1 id = "Title"> The Creative Block </h1>
+            <h2 id = "Slogan"> Placeholder for a Slogan</h2>
+        </div>
+        <ul class = "PageLinks">
+            <li> <a href = "ForumPage.html" id = "GoToForum">Forum</a></li>
+            <li><a href = "PatternSearchingPage.html" id = "GoToPatternSearch">Pattern Search</a></li>
+            <li> <a href = "MaterialSearchingPage.html" id = "GoToMaterialSearch">Material Search</a></li>
+        </ul>
+        <li> <a href = "UserPage.html">
+            <div id = "ProfileBox">
+                <img src = "guest pfp.webp" id = "pfp">
+                <p id = "Username"> Guest</p>
+            </div>
+        </a></li>
+    </ul>
+    </header>
+    <body>
+        <div id = "Page">
+        <ul class = "PageLayout">
+            <div class = "TitleAndSearch">
+        <div class="PageTitle"><h1><b>Search The Forum!</b></h1></div>
+        <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <i class="fa fa-search"></i>
+        </div>
+        <div class="Search">
+            <form action="">
+            <h2>Narrow Your Search Here!</h2>
+            <div class="input-box">
+                <label><b>Tags</b></label><br>
+                <input type="checkbox" id="tag1" name="tag1" value="Tag 1">
+                <label for="difficulty1">Tag 1</label><br>
+                <input type="checkbox" id="tag2" name="tag2" value="Tag 2">
+                <label for="difficulty2">Tag 2</label><br>
+                <input type="checkbox" id="tag3" name="tag3" value="Tag 3">
+                <label for="difficulty3">Tag 3</label><br>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+            </div>
+            <div id = "Entries"></div>
+        </ul>
+        <div class = "AdSpace">
+            <h2 id = "AdTitle"> Advertisements </h2>
+            <img src = "ad1.png" id = "ad1">
+            <img src = "ad2.png" id = "ad2">
+            <img src = "ad3.png" id = "ad3">
+            <img src = "ad4.png" id = "ad4">
+            <img src = "ad5.png" id = "ad5">
+        </div>
+        </div>
+        <template id = "Entry">
+        <div class = "ForumEntry">
+                        <div class = "InfoWTitle">
+                            <h2 class = "EntryTitle"></h2>
+                                <div class = "Info">
+                                  <div> <p>By:</p>  <p class = "Author"> </p> </div>
+                                  <div><p>Added On:</p><p class = "Date"></p> </div>
+                                  <div><p>Tags:</p><p class = "Tags"></p></div>
+                                  <div><p>Comments:</p><p class = "Comments"></p></div>
+                                </div>    
+                        </div>
+                                <div id = "Content">
+                                    <p> Description: </p><p class = "Description"></p>
+                                </div>
+                                <div id = "Links">
+                                    <p> Mentioned Links:</p> <li><a href = <p class = "Links"> </p></a></li>
+                                </div>
+                    </div>
+        </template>
+        <script src = "ForumScript.js"></script>
+    </body>
+    
+</html>
