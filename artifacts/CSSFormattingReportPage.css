@@ -181,7 +181,7 @@ ul.PageLayout h2
 {
     list-style-type: none;
     background-color: #D194A3;
-    height: 450px;
+    height: 1000px;
     width: 200px;
     margin: 10px;
     border-radius: 25px;
@@ -194,4 +194,40 @@ ul.PageLayout h2
     font-family: Verdana, sans-serif;
     text-shadow: 5px 5px 5px #85586F;
     width: 190px;
+    margin-bottom: 5px;
+}
+#ad1
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad2
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad3
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad4
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad5
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
 }
