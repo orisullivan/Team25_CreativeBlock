@@ -45,12 +45,14 @@ body {
     font-size: 16px;
     color: #fff;
     font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
 .input-box input::placeholder {
     color: #fff;
     font-family: "Poppins", sans-serif;
     padding: 10px;
+    text-align: left;
 }
 
 .wrapper .remember-forgot {
