@@ -12,7 +12,7 @@ ul.topnav
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #F8EcD1;
+    background-color: #AEEFC2;
     height: 120px;
     border-radius: 25px;
     border-style: dashed;
@@ -39,7 +39,7 @@ ul.topnav
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #5DAFA2;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -47,7 +47,7 @@ ul.topnav
 {
     font-size: medium;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #5DAFA2;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -73,7 +73,7 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #deb6ab;
+    box-shadow: 5px 5px 5px #5DAFA2;
 }
 #GoToForum
 {
@@ -89,7 +89,7 @@ ul.PageLinks li a
 }
 ul.PageLinks li a:hover
 {
-    background-color: #957dad;
+    background-color: #5DAFA2;
     color: white;
 }
 li a:hover
@@ -111,7 +111,7 @@ li a:hover:active
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #deb6ab;
+    border-color: #5DAFA2;
     border-style: solid;
     border-width: 2px;
     margin-bottom: 0px;
@@ -127,11 +127,11 @@ li a:hover:active
 }
 body 
 {
-    background-color: #deb6ab;
+    background-color: #5DAFA2;
 }
 #Page
 {
-    display:inline-flex;
+    display: inline-flex;
 }
 ul.PageLayout
 {
@@ -139,8 +139,8 @@ ul.PageLayout
     list-style-type: none;
     margin: 10px;
     padding: 0;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #AEEFC2;
+    height: 360px;
     width: 1000px;
     border-radius: 25px;
     border-style: dashed;
@@ -149,20 +149,34 @@ ul.PageLayout h1
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #5DAFA2;
 }
 ul.PageLayout h2
 {
     font-size: large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #5DAFA2;
+    margin: 10px;
 }
-
+#ProhibitedActions
+{
+    list-style-type: none;
+    height: 50px;
+    width: 500px;
+    padding: 5px;
+}
+#RecommendedActions
+{
+    list-style-type: none;
+    height: 50px;
+    width: 500px;
+    padding: 5px;
+}
 #AdSpace
 {
     list-style-type: none;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #AEEFC2;
+    height: 1000px;
     width: 200px;
     margin: 10px;
     border-radius: 25px;
@@ -173,7 +187,7 @@ ul.PageLayout h2
     font-size: large;
     text-align: center;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #5DAFA2;
     width: 190px;
     margin-bottom: 5px;
 }
