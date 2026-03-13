@@ -140,8 +140,8 @@ ul.PageLayout
     margin: 10px;
     padding: 0;
     background-color: #e0bbe4;
-    height: 1200px;
     width: 1000px;
+    height: fit-content;
     border-radius: 25px;
     border-style: dashed;
 }
@@ -164,6 +164,7 @@ ul.PageLayout h2
     width: 200px;
     border-right: #957dad;
     border-right-style: dashed;
+    font-family: Verdana, sans-serif;
 }
 #Entries
 {
@@ -180,9 +181,9 @@ ul.PageLayout h2
   border-style: solid;
   border-color: #957dad;
   border-width: 5px;
-  width: 700px;
-  margin-bottom: 30px;
-  margin-left: 50px;
+  width: 780px;
+  margin-bottom: 20px;
+  margin-left: 5px;
   margin-top: 10px;
 }
 
@@ -211,18 +212,43 @@ ul.PageLayout h2
 {
     display: inline-flex;
     width: fit-content;
-    max-width: 175px;
-    margin-left: 15px;
+    margin-left: 10px;
+    font-family: Verdana, sans-serif;
+    overflow: none;
 }
 .ForumEntry #Content
 {
-    height: 125px;
+    display: flex;
+    height: 70px;
     background-color: #e0bbe4;
     border-radius: 25px;
     border-style: dashed;
     border-color:#957dad;
     padding: 10px;
     overflow: hidden;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry #Links
+{
+    display: flex;
+    height: 30px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    overflow: hidden;
+    border-top-style: none;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    margin-top: 15px;
 }
 #AdSpace
 {
@@ -234,7 +260,7 @@ ul.PageLayout h2
     border-radius: 25px;
     border-style: dashed;
 }
-#AdTitle
+#AdTitle 
 {
     font-size: large;
     text-align: center;
