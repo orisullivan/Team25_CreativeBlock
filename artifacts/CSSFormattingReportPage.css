@@ -12,7 +12,7 @@ ul.topnav
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #F8EcD1;
+    background-color: #D194A3;
     height: 120px;
     border-radius: 25px;
     border-style: dashed;
@@ -39,7 +39,7 @@ ul.topnav
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #85586F;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -47,7 +47,7 @@ ul.topnav
 {
     font-size: medium;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #85586F;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -73,7 +73,7 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #deb6ab;
+    box-shadow: 5px 5px 5px #85586F;
 }
 #GoToForum
 {
@@ -111,7 +111,7 @@ li a:hover:active
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #deb6ab;
+    border-color: #85586F;
     border-style: solid;
     border-width: 2px;
     margin-bottom: 0px;
@@ -127,20 +127,20 @@ li a:hover:active
 }
 body 
 {
-    background-color: #deb6ab;
+    background-color: #85586F;
 }
 #Page
 {
-    display:inline-flex;
+    display: inline-flex;
 }
 ul.PageLayout
 {
-    display : flex;
+    display : inline-block;
     list-style-type: none;
     margin: 10px;
     padding: 0;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #D194A3;
+    height: 450px;
     width: 1000px;
     border-radius: 25px;
     border-style: dashed;
@@ -149,20 +149,39 @@ ul.PageLayout h1
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #85586F;
 }
 ul.PageLayout h2
 {
     font-size: large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #85586F;
+    margin: 10px;
+}
+#ReportTicket
+{
+    width: 750px;
+    height: 350px;
+    margin-left: 125px;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color: #85586F;
+}
+#Contents
+{
+    margin: 10px;
+}
+#Description
+{
+    height: 100px;
+    width: 700px;
 }
 
 #AdSpace
 {
     list-style-type: none;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #D194A3;
+    height: 1000px;
     width: 200px;
     margin: 10px;
     border-radius: 25px;
@@ -173,7 +192,7 @@ ul.PageLayout h2
     font-size: large;
     text-align: center;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #85586F;
     width: 190px;
     margin-bottom: 5px;
 }
