@@ -1,7 +1,7 @@
 :root
 {
-    --darkerColor : #85586F;
-    --lighterColor : #DEB6AB;
+    --darkerColor: #957DAD;
+    --lighterColor: #E0BBE4;
 }
 body
 {
@@ -34,4 +34,8 @@ ul.PageLinks li a
 .AdSpace
 {
     background-color: var(--lighterColor);
+}
+.Search .btn 
+{
+    background: var(--darkerColor);
 }

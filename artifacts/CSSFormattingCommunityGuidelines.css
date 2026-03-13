@@ -1,228 +1,49 @@
-html
+:root
 {
-    cursor: url('scissors1.png'), auto;
+    --darkerColor: #5DAFA2;
+    --lighterColor: #AEEFC2;
 }
-html:active
+body
 {
-    cursor: url('scissors2.png'), auto;
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
 }
 ul.topnav
 {
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #AEEFC2;
-    height: 120px;
-    border-radius: 25px;
-    border-style: dashed;
-    
+    background-color: var(--lighterColor);
 }
-#Logo
+ul.PageLinks li a
 {
-    margin: 10px 10px 10px 10px;
-    height: 110px;
-    border-radius: 25px;
-}
-#TitleAndSloganBox
-{
-    display: inline-block;
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#Title
-{
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #5DAFA2;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-#Slogan
-{
-    font-size: medium;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #5DAFA2;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-ul.PageLinks
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul.PageLinks li a 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
-    border-radius: 25px;
-    border-style: dashed;
-    box-shadow: 5px 5px 5px #5DAFA2;
-}
-#GoToForum
-{
-    background-color: #e0bbe4;
-}
-#GoToPatternSearch
-{
-    background-color: #fec8d8;
-}
-#GoToMaterialSearch
-{
-    background-color: #d6efed;
-}
-ul.PageLinks li a:hover
-{
-    background-color: #5DAFA2;
-    color: white;
-}
-li a:hover
-{
-    cursor: url('scissors1.png'), auto;
-}
-li a:hover:active
-{
-    cursor: url('scissors2.png'), auto;
-}
-#ProfileBox
-{
-    height: 100px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
+    box-shadow: 5px 5px 5px var(--darkerColor);
 }
 #pfp
 {
-    height: 80px;
-    border-radius: 25px;
-    border-color: #5DAFA2;
-    border-style: solid;
-    border-width: 2px;
-    margin-bottom: 0px;
-
+    border-color: var(--darkerColor);
 }
-#Username
+.PageLayout
 {
-    text-align: center;
-    margin-top: 0px;
-    color: black;
-    text-decoration: none;
-    font-family: Verdana, sans-serif; 
+    background-color: var(--lighterColor);
 }
-body 
+.AdSpace
 {
-    background-color: #5DAFA2;
+    background-color: var(--lighterColor);
 }
-#Page
+.Search .btn 
 {
-    display: inline-flex;
-}
-ul.PageLayout
-{
-    display : flex;
-    list-style-type: none;
-    margin: 10px;
-    padding: 0;
-    background-color: #AEEFC2;
-    height: 360px;
-    width: 1000px;
-    border-radius: 25px;
-    border-style: dashed;
-}
-ul.PageLayout h1
-{
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #5DAFA2;
-}
-ul.PageLayout h2
-{
-    font-size: large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #5DAFA2;
-    margin: 10px;
+    background: var(--darkerColor);
 }
 #ProhibitedActions
 {
-    list-style-type: none;
-    height: 50px;
-    width: 500px;
-    padding: 5px;
+    list-style-type: none; height: 350px; width: 500px; padding: 5px;
 }
 #RecommendedActions
 {
-    list-style-type: none;
-    height: 50px;
-    width: 500px;
-    padding: 5px;
-}
-#AdSpace
-{
-    list-style-type: none;
-    background-color: #AEEFC2;
-    height: 1000px;
-    width: 200px;
-    margin: 10px;
-    border-radius: 25px;
-    border-style: dashed;
-}
-#AdTitle
-{
-    font-size: large;
-    text-align: center;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #5DAFA2;
-    width: 190px;
-    margin-bottom: 5px;
-}
-#ad1
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad2
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad3
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad4
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad5
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    list-style-type: none; height: 350px; width: 500px; padding: 5px;
 }
