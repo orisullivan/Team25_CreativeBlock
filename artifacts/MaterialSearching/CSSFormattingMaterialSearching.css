@@ -140,11 +140,10 @@ ul.PageLayout
     margin: 10px;
     padding: 0;
     background-color: #d6efed;
-    height: fit-content;
+    height: 1200px;
     width: 1000px;
     border-radius: 25px;
     border-style: dashed;
-    font-family: Verdana, sans-serif;
 }
 ul.PageLayout h1
 {
@@ -163,7 +162,7 @@ ul.PageLayout h2
 {
     list-style-type: none;
     background-color: #d6efed;
-    height: 1000px;
+    height: 1200px;
     width: 200px;
     margin: 10px;
     border-radius: 25px;

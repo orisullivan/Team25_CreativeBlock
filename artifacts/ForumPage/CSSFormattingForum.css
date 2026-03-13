@@ -12,7 +12,7 @@ ul.topnav
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #F8EcD1;
+    background-color: #e0bbe4;
     height: 120px;
     border-radius: 25px;
     border-style: dashed;
@@ -39,7 +39,7 @@ ul.topnav
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #957dad;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -47,7 +47,7 @@ ul.topnav
 {
     font-size: medium;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #957dad;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -73,7 +73,7 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #deb6ab;
+    box-shadow: 5px 5px 5px #957dad;
 }
 #GoToForum
 {
@@ -111,7 +111,7 @@ li a:hover:active
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #deb6ab;
+    border-color: #957dad;
     border-style: solid;
     border-width: 2px;
     margin-bottom: 0px;
@@ -127,7 +127,7 @@ li a:hover:active
 }
 body 
 {
-    background-color: #deb6ab;
+    background-color: #957dad;
 }
 #Page
 {
@@ -139,9 +139,9 @@ ul.PageLayout
     list-style-type: none;
     margin: 10px;
     padding: 0;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #e0bbe4;
     width: 1000px;
+    height: fit-content;
     border-radius: 25px;
     border-style: dashed;
 }
@@ -149,31 +149,123 @@ ul.PageLayout h1
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #957dad;
 }
 ul.PageLayout h2
 {
     font-size: large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #957dad;
+}
+#TitleSearchFilters
+{
+    text-align: center;
+    border-radius: 25px;
+    width: 200px;
+    border-right: #957dad;
+    border-right-style: dashed;
+    font-family: Verdana, sans-serif;
+}
+#Entries
+{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.ForumEntry
+{
+  background-color:#957dad;
+  height: 240px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #957dad;
+  border-width: 5px;
+  width: 780px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
 
+.InfoWTitle
+{
+    display: block;
+    height: 90px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    border-bottom-style: none;
+    padding: 0px;
+}
+.EntryTitle
+{
+    height: 10px;
+    margin-left: 10px;
+}
+.Info
+{
+    display: inline-flex;
+    height: 40px;
+}
+.Info div
+{
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 10px;
+    font-family: Verdana, sans-serif;
+    overflow: none;
+}
+.ForumEntry #Content
+{
+    display: flex;
+    height: 70px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    padding: 10px;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry #Links
+{
+    display: flex;
+    height: 30px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    overflow: hidden;
+    border-top-style: none;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    margin-top: 15px;
+}
 #AdSpace
 {
     list-style-type: none;
-    background-color: #F8EcD1;
-    height: 1200px;
+    background-color: #e0bbe4;
+    height: 1000px;
     width: 200px;
     margin: 10px;
     border-radius: 25px;
     border-style: dashed;
 }
-#AdTitle
+#AdTitle 
 {
     font-size: large;
     text-align: center;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #deb6ab;
+    text-shadow: 5px 5px 5px #957dad;
     width: 190px;
     margin-bottom: 5px;
 }
