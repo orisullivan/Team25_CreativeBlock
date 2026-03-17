@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
     <header>
         <ul className = "topnav">
         <img src = "/logo.png" id = "Logo"/>
