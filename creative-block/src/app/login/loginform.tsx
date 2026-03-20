@@ -15,7 +15,7 @@ export const LoginForm: React.FC = () => {
             <title>Returning User</title>
     </header>
 
-<body>
+<div>
     <div className="wrapper">
         <form>
             <h1>Welcome to the Creative Block!</h1>
@@ -38,6 +38,6 @@ export const LoginForm: React.FC = () => {
             </div>
         </form>
     </div>
-</body>
+</div>
     </div>
   )}

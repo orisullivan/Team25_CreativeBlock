@@ -1,4 +1,5 @@
 
+import { SignInDirect } from "@/components/signin-redirect";
 import "../../globals.css";
 import "./CSSFormattingForum.css";
 import Link from 'next/link';
@@ -20,13 +21,13 @@ export default function Home() {
         </ul>
         <li> <a href = "#">
             <div id = "ProfileBox">
-                <img src = "guest pfp.webp" id = "pfp"/>
+                <SignInDirect className="pfp"/>
                 <p id = "Username"> Guest</p>
             </div>
         </a></li>
     </ul>
     </header>
-    <body>
+    <div id="body">
         <div id = "Page">
         <ul className = "PageLayout">
             <div id = "TitleSearchFilters">
@@ -45,6 +46,6 @@ export default function Home() {
             <h2 id = "AdTitle"> Advertisements </h2>
         </div>
         </div>
-    </body>
+    </div>
     </div>
   )}
