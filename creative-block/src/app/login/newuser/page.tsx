@@ -6,14 +6,14 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div>
-		<head>
+		<div className = "head">
 			<meta charSet="UTF-8"/>
 			<meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 			<title>New User</title>
-		</head>
+		</div>
 
-<body>
+<div className = "body">
     <div className="wrapper">
         <form action="../search/forum">
             <h1>Create a New Account</h1>
@@ -36,6 +36,6 @@ export default function Home() {
             </div>
         </form>
     </div>
-</body>
+    </div>
     </div>
   )}
