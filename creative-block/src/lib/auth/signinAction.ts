@@ -8,3 +8,12 @@ export const handleGoogleLogin = async () => {
         throw error;
     }
 }
+
+export const handleEmailLogin = async () => {
+    try {
+        console.log("Signed in with email");
+        console.log("MAde a log in email");
+    } catch (error) {
+        throw error;
+    }
+}
