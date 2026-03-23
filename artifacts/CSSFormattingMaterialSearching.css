@@ -1,0 +1,41 @@
+:root
+{
+    --darkerColor : #898AA6;
+    --lighterColor : #d6efed;
+}
+body
+{
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+ul.topnav
+{
+    background-color: var(--lighterColor);
+}
+ul.PageLinks li a
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+#pfp
+{
+    border-color: var(--darkerColor);
+}
+.PageLayout
+{
+    background-color: var(--lighterColor);
+}
+.AdSpace
+{
+    background-color: var(--lighterColor);
+}
+.Search .btn 
+{
+    background: var(--darkerColor);
+}
