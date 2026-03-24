@@ -7,13 +7,14 @@ import {useState} from 'react';
 import { handleGoogleLogin } from "@/src/lib/auth/signinAction";
 import { handleEmailLogin } from "@/src/lib/auth/signinAction"
 
+
 export const LoginForm: React.FC = () => {
     const [formData, setFormData] = useState({email: "" as string });
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        try {
-            await handleEmailLogin(formData.email);
-        } catch error
+        //try {
+        //    await handleEmailLogin(formData.email);
+        //} catch error
     };
     return (
     <div className="">

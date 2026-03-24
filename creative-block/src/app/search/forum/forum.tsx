@@ -17,12 +17,12 @@ return <div className="">
             <li><a href = "./patterns" id = "GoToPatternSearch">Pattern Search</a></li>
             <li> <a href = "./materials" id = "GoToMaterialSearch">Material Search</a></li>
         </ul>
-        <li> <a href = "#">
-            <div id = "ProfileBox">
+        {/* <li> <a href = "#"> */}
+        <div id = "ProfileBox">
                 <SignInDirect className="pfp"/>
                 <p id = "Username"> Guest</p>
             </div>
-        </a></li>
+        {/* </a></li> */}
     </ul>
     </header>
     <div id="body">
