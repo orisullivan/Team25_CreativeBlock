@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tip Jar</title>
+        <link rel = "stylesheet" href = "CSSFormattingTipJar.css">
+    </head>
+    <header>
+        <script src = "TipJarScript.js"></script>
+        <div id = "TipJar">
+            <img src = "TipJarBlank.PNG" id = "PopUpImg">
+            <button type = "button" id = "Close" onclick = hideTipJar()> Close Tip Jar</button>
+            <div class = text>
+                <h2 id = "Title"> Tip Jar</h2>
+                <form class = "TipInfo">
+                    <label for ="UsernameInput"> Your Username:</label>
+                    <input type = "text" id = "UsernameInput">
+                    <label for = "TippedUser">Recipient Username:</label>
+                    <input type = "text" id = "TippedUser">
+                    <label for = "TipAmount"> Tip Amount (in dollars):</label>
+                    <input type= "number" id = "TipAmount">
+                    <label for = "PayOption"> Payment Option:</label>
+                    <label for="paypal"> <input type="radio" id="paypal" value="paypal">PayPal</label>
+                    <label for= "venmo"><input type="radio" id="venmo" value="venmo"> Venmo</label>
+                    <label for = "Message"> Message for Recipient:</label>
+                    <input type="text" id = "Message">
+                    <label for ="Confirm"> Confirm Information: <input type="checkbox" id = "Confirm"></label>
+                    <br>
+                    <input type = "submit" value = "Send Tip!" id = "submit" onclick= submitTipInfo()>
+                </form>
+            </div>
+        </div>
+    </header>
+</html>
