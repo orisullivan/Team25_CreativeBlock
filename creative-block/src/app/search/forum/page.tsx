@@ -9,7 +9,7 @@ import { checkIsAuthenticated } from "@/src/lib/auth/checkIsAuthenticated";
 
 const Forum: React.FC = async () => {
     const isAuthenticated = await checkIsAuthenticated();
-    if (!isAuthenticated) {
+    if (isAuthenticated) {
         redirect("/login");
     } else {
         return <ForumPage/>

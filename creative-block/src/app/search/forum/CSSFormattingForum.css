@@ -6,15 +6,20 @@ html:active
 {
     cursor: url('/scissors2.png'), auto;
 }
+:root
+{
+    --darkerColor: #957DAD;
+    --lighterColor: #E0BBE4;
+}
 ul.topnav
 {
+    background-color: var(--lighterColor);
     display : flex;
     list-style-type: none;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 5px;
     padding: 0;
-    background-color: #e0bbe4;
     height: 135px;
     border-radius: 25px;
     border-style: dashed;
@@ -76,7 +81,7 @@ ul.PageLinks li a
     font-family: Verdana, sans-serif;
     border-radius: 25px;
     border-style: dashed;
-    box-shadow: 5px 5px 5px #957dad;
+    box-shadow: 5px 5px 5px var(--darkerColor);
 }
 #GoToForum
 {
@@ -114,7 +119,7 @@ li a:hover:active
 {
     height: 80px;
     border-radius: 25px;
-    border-color: #957dad;
+    border-color: var(--darkerColor);
     border-style: solid;
     border-width: 2px;
     margin-bottom: 0px;
@@ -128,9 +133,9 @@ li a:hover:active
     text-decoration: none;
     font-family: Verdana, sans-serif; 
 }
-body 
+body
 {
-    background-color: #957dad;
+    background-color: var(--darkerColor);
 }
 #Page
 {
@@ -154,13 +159,13 @@ ul.PageLayout h1
 {
     font-size: xxx-large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
+    text-shadow: 5px 5px 5px var(--darkerColor);
 }
 ul.PageLayout h2
 {
     font-size: large;
     font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
+    text-shadow: 5px 5px 5px var(--darkerColor);
 }
 #TitleSearchFilters
 {
@@ -169,24 +174,94 @@ ul.PageLayout h2
     width: 200px;
     border-right: #957dad;
     border-right-style: dashed;
+    font-family: Verdana, sans-serif;
+}
+#Entries
+{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
 }
 .ForumEntry
 {
-   color: black;
   background-color:#957dad;
-  width: 780px;
-  height: 200px;
-  margin: 10px;
+  height: 240px;
   border-radius: 25px;
+  border-style: solid;
+  border-color: #957dad;
+  border-width: 5px;
+  width: 780px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-top: 10px;
 }
-#Info
+.InfoWTitle
+{
+    display: block;
+    height: 90px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    border-bottom-style: none;
+    padding: 0px;
+}
+.EntryTitle
+{
+    height: 10px;
+    margin-left: 10px;
+}
+.Info
 {
     display: flex;
     background-color: #e0bbe4;
-    height: 50px;
+    height: 40px;
     border-radius: 25px;
     border-color: #957dad;
     border-style: dashed;
+}
+.Info div
+{
+    display: inline-flex;
+    width: fit-content;
+    margin-left: 10px;
+    font-family: Verdana, sans-serif;
+    overflow: none;
+}
+.ForumEntry #Content
+{
+    display: flex;
+    height: 70px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    padding: 10px;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry #Links
+{
+    display: flex;
+    height: 30px;
+    background-color: #e0bbe4;
+    border-radius: 25px;
+    border-style: dashed;
+    border-color:#957dad;
+    overflow: hidden;
+    border-top-style: none;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
+.ForumEntry li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    margin-top: 15px;
 }
 #Content
 {
@@ -200,7 +275,7 @@ ul.PageLayout h2
 #AdSpace
 {
     list-style-type: none;
-    background-color: #e0bbe4;
+    background-color: var(--lighterColor);
     height: 1200px;
     width: 15vmax;
     margin: 5px;
@@ -214,4 +289,45 @@ ul.PageLayout h2
     font-family: Verdana, sans-serif;
     text-shadow: 5px 5px 5px #957dad;
     width: 190px;
+    margin-bottom: 5px;
+}
+#ad1
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad2
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad3
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad4
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+#ad5
+{
+    margin-top: 5px;
+    height: 180px;
+    margin-left: 10px;
+
+}
+
+.Search .btn 
+{
+    background: var(--darkerColor);
 }
