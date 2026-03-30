@@ -1,0 +1,100 @@
+:root
+{
+    --darkerColor : #898AA6;
+    --lighterColor : #d6efed;
+}
+body
+{
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+ul.topnav
+{
+    background-color: var(--lighterColor);
+}
+ul.PageLinks li a
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+#pfp
+{
+    border-color: var(--darkerColor);
+}
+.PageLayout
+{
+    background-color: var(--lighterColor);
+}
+.AdSpace
+{
+    background-color: var(--lighterColor);
+}
+.Search .btn 
+{
+    background: var(--darkerColor);
+}
+.EntryLayout
+{
+    background-color: var(--darkerColor);
+    border-color: var(--darkerColor);
+    display: flex;
+}
+.MaterialImageHolder
+{
+    width:fit-content;
+}
+#MaterialImage
+{
+    height: 230px;
+    width: 230px;
+    border-radius: 25px;
+    border-color: var(--lighterColor);
+    border-style: dashed;
+    border-width: 5px;
+}
+.MaterialInfo
+{
+    height: 220px;
+    width: 350px;
+    border-radius: 25px;
+    margin: 5px;
+    padding : 5px;
+    background-color: var(--lighterColor);
+}
+.InfoWTitle
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+#Content
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+#Links
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+.EntryDisplay
+{
+    background-color: var(--darkerColor); border-color: var(--darkerColor);
+}
+.EntryHeader
+{
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
+}
+.EntryDisplayContent
+{
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
+}
+.FeaturedIn
+{
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
+}
