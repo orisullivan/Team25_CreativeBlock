@@ -1,0 +1,319 @@
+html
+{
+    cursor: url('scissors1.png'), auto;
+}
+html:active
+{
+    cursor: url('scissors2.png'), auto;
+}
+
+ul.topnav
+{
+    display : flex; list-style-type: none; margin: 0; padding: 0; height: 120px; border-radius: 25px; 
+    border-style: dashed;  
+}
+#Logo
+{
+    margin: 10px 10px 10px 10px; height: 110px; border-radius: 25px;
+}
+#TitleAndSloganBox
+{
+    display: inline-block; align-items: center; justify-items: center; height: 100px; margin-top: 10px; margin-left: 10px;
+    margin-right: 10px;
+}
+#Title
+{
+    font-size: xxx-large; font-family: Verdana, sans-serif; margin-top: 10px; margin-bottom: 0px;
+}
+#Slogan
+{
+    font-size: medium; font-family: Verdana, sans-serif; margin-bottom: 0px; margin-top: 0px;
+}
+ul.PageLinks
+{
+    display : flex; list-style-type: none; margin: 0; padding: 0;
+}
+ul.PageLinks li a 
+{
+    display: flex; justify-content: center; align-items: center; color: black; padding: 20px; margin-top: 30px; margin-bottom: 25px;
+    margin-left: 10px; margin-right: 10px; text-decoration: none; font-family: Verdana, sans-serif; border-radius: 25px;
+    border-style: dashed; 
+}
+#GoToForum
+{
+    background-color: #e0bbe4;
+}
+#GoToPatternSearch
+{
+    background-color: #fec8d8;
+}
+#GoToMaterialSearch
+{
+    background-color: #d6efed;
+}
+ul.PageLinks li a:hover
+{
+    background-color: #957dad; color: white;
+}
+li a:hover
+{
+    cursor: url('scissors1.png'), auto;
+}
+li a:hover:active
+{
+    cursor: url('scissors2.png'), auto;
+}
+#ProfileBox
+{
+    height: 100px; display: inline-block; margin-top: 10px; margin-left: 10px;
+}
+#pfp
+{
+    height: 80px; border-radius: 25px; border-style: solid; border-width: 2px; margin-bottom: 0px;
+}
+#Username
+{
+    text-align: center; margin-top: 0px; color: black; text-decoration: none; font-family: Verdana, sans-serif; 
+}
+#Page
+{
+    display: inline-flex;
+}
+ul.PageLayout
+{
+    display : inline-flex; margin: 10px; padding: 0; width: 1000px; height: fit-content;
+    border-radius: 25px; border-style: dashed;
+}
+ul.PageLayout h1
+{
+    font-size: xxx-large; font-family: Verdana, sans-serif;
+}
+ul.PageLayout h2
+{
+    font-size: large; font-family: Verdana, sans-serif;
+}
+ul.PageLayout p
+{
+ font-family: Verdana,sans-serif;
+}
+.AdSpace
+{
+    list-style-type: none;  height: 1000px; width: 200px; margin: 10px; border-radius: 25px; border-style: dashed;
+}
+#AdTitle 
+{
+    font-size: large; text-align: center; font-family: Verdana, sans-serif; width: 190px;
+    margin-bottom: 5px;
+}
+.AdSpace img
+{
+    margin-top: 5px; height: 180px; margin-left: 10px;
+}
+
+.TitleAndSearch
+{
+    text-align: center; border-radius: 25px; width: 350px; border-right-style: dashed; font-family: Verdana, sans-serif; 
+    display:inline; padding: 10px;
+}
+.PageTitle {
+    width: 300px; background: #fff; border: 2px solid rgba(255, 255, 255, .2); backdrop-filter: blur(20px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); color: black; border-radius: 25px; transition: height .2s ease;
+    justify-content: center; margin: auto;
+}
+.TitleAndSearch .search-container {
+    margin-top: 10px; margin-bottom: 10px; position: relative; justify-content: center;
+}
+
+.TitleAndSearch .search-container input {
+    width:300px; font-size: 18px; padding: 10px 20px; border-radius: 25px; border: none; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.TitleAndSearch .search-container i {
+    position:absolute; top:50%; right:50px; transform: translateY(-50%);
+}
+.TitleAndSearch .active {
+    height: 520px; width: 500px;
+}
+
+.TitleAndSearch h1 {
+    font-size: 36px; text-align: center;
+}
+
+.TitleAndSearch .input-box {
+    justify-content: right;
+}
+.Search {
+    width: 300px; background: #fff; border: 2px solid rgba(255, 255, 255, .2); backdrop-filter: blur(20px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);color: black; border-radius: 25px; padding: 10px 10px; transition: height .2s ease;
+    margin: auto;
+}
+.Search h2 {
+    font-size: 18px; text-align: center;
+}
+
+.Search .btn {
+    width: 100%; height: 45px; background: #B7D3DF; border: none; outline: none; border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); cursor: pointer; font-size: 16px; color: #333; font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.Search .btn:hover {
+    background: #bab9b9;
+}
+#Entries
+{
+    display: inline; justify-content: center; align-items: center;
+}
+.EntryLayout
+{
+ height: 240px; border-radius: 25px; border-style: solid; border-width: 5px; width: 600px; margin-bottom: 20px; margin-left: 5px; 
+ margin-top: 10px;
+}
+a
+{
+    text-decoration: none; color: black;
+}
+.InfoWTitle
+{
+    display: block; height: 90px; border-radius: 25px; border-style: dashed; border-bottom-style: none; padding: 0px;
+}
+.EntryTitle
+{
+    height: 10px; margin-left: 10px;
+}
+.Info
+{
+    display: inline-flex; height: 40px;
+}
+.Info div
+{
+    display: inline-flex; width: fit-content; margin-left: 10px; font-family: Verdana, sans-serif; overflow: none;
+}
+#Content
+{
+    display: flex; height: 70px; border-radius: 25px; border-style: dashed; padding: 10px; overflow: hidden; 
+    font-family: Verdana, sans-serif;
+}
+#Links
+{
+    display: flex; height: 30px; border-radius: 25px; border-style: dashed; overflow: hidden; border-top-style: none; 
+    padding: 10px; font-family: Verdana, sans-serif;
+}
+.ForumEntry li a
+{
+    display: flex; justify-content: center; align-items: center; text-decoration: none; font-family: Verdana, sans-serif; 
+    margin-top: 15px;
+}
+.BackAndEntry
+{
+    width: 1000px;
+}
+.EntryDisplay
+{
+    width: 950px; height: fit-content; border-radius: 25px; border-style: dashed; border-width: 5px;; margin: auto; margin-top: 10px; margin-bottom: 10px;
+}
+.TitleAuthorDate
+{
+    margin: 5px;
+}
+.EntryDisplayTitle
+{
+    margin: 5px;
+}
+#FavButton
+{
+    border: none; background: none;
+}
+#FavButtonImg
+{
+    height: 50px;
+}
+.AuthorAndTip
+{
+    display: inline-flex;
+}
+#TipJarButton
+{
+    border: none; background: none;
+}
+#TipJarButtonImg
+{
+    height: 50px;
+}
+#BackButton
+{
+    width: fit-content; height: 30px; margin-left: 25px; margin-top: 5px; border-radius: 25px; 
+}
+.EntryHeader
+{
+    display: flex; align-items: center; border-radius: 25px; padding: 5px;
+}
+.EntryDisplayContent
+{
+    border-top: dashed; border-bottom: dashed; border-radius: 25px; border-width: 5px; padding: 5px;
+}
+#EntryDisplayImg
+{
+    height: 150px; border-radius: 25px; border-style: solid;
+}
+.FeaturedIn
+{
+    border-radius: 25px;padding: 5px;
+}
+.RatingSection
+{
+    border-radius: 25px; padding: 5px;
+}
+.Rating
+{
+    border-radius: 25px; border-style: solid; border-width: 3px; display: inline-flex; width: 935px
+}
+.RaterInfo
+{
+    display: inline-flex; align-items: center; border-radius: 25px; border-right-style: dashed; width: 210px;
+}
+.RatingInfo
+{
+    border-radius: 25px; padding: 5px; width: 710px;
+}
+#RaterPFP
+{
+    border-radius: 25px; height: 75px; margin: 5px; border-style: solid;
+}
+#ReportTicket
+{
+    width: 750px; height: 350px; margin-left: 125px; border-radius: 25px; border-style: dashed;
+}
+#Contents
+{
+    margin: 10px;
+}
+#Description
+{
+    height: 100px; width: 700px;
+}
+
+.MaterialInfo div
+{
+    display: inline-flex; width: 300px; height: 25px;
+}
+#PosterPFP
+{
+    height: 100px; border-radius: 25px; border-style: solid; 
+}
+.PostBubble
+{
+    position:relative; background-color: white; border-radius: 25px; width:fit-content; height: fit-content;margin-left: 20px; 
+    min-height: 65px; padding: 5px;
+}
+.PostBubble::after {
+  display: block; width: 0; content: "";
+  border: 15px solid transparent; border-right-color: white;
+  border-left: 0;left: -14px; top: 20px; position: absolute;
+}
+
+.InitialPost
+{
+    display: flex; border-radius: 25px; border-style: dashed;
+}
+
