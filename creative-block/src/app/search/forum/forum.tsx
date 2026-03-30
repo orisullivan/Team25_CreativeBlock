@@ -6,7 +6,7 @@ import "./CSSFormattingForum.css";
 import Link from 'next/link';
 import Script from 'next/script.js';
 import Template from "@/src/app/search/forum/template"
-import "./ForumScript"
+// import "./ForumScript"
 
 export const ForumPage: React.FC = () => {
 
@@ -84,8 +84,8 @@ return <div className="">
             </div>
             </div>
         </Template>
-        <div> <Script src="./forum/ForumScript.js" defer></Script>
-        </div> 
+        {/* <div> <Script src="./forum/ForumScript.js" defer></Script> */}
+        {/* </div>  */}
     </div>
     </div>
 }
