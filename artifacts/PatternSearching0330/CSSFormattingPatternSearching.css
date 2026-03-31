@@ -95,3 +95,36 @@ ul.PageLinks li a
 {
     border-color: var(--darkerColor);
 }
+.EntryLayout
+{
+    background-color: var(--darkerColor);
+    border-color: var(--darkerColor);
+    display: flex;
+}
+.MaterialImageHolder
+{
+    width:fit-content;
+}
+#MaterialImage
+{
+    height: 230px;
+    width: 230px;
+    border-radius: 25px;
+    border-color: var(--lighterColor);
+    border-style: dashed;
+    border-width: 5px;
+}
+.MaterialInfo
+{
+    height: 220px;
+    width: 350px;
+    border-radius: 25px;
+    margin: 5px;
+    padding : 5px;
+    background-color: var(--lighterColor);
+}
+.InfoWTitle
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
