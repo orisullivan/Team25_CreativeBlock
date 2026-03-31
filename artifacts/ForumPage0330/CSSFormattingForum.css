@@ -59,3 +59,78 @@ ul.PageLinks li a
     background-color: var(--lighterColor);
     border-color: var(--darkerColor);
 }
+.EntryDisplayTitle
+{
+    display: flex;
+    align-items: center;
+}
+.InitialPost
+{
+    border-color: var(--darkerColor);
+    background-color: var(--lighterColor);
+    border-bottom-style: none;
+}
+.PosterInfo
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.PosterInfo img
+{
+    border-color: var(--darkerColor); margin-bottom: 0px;
+}
+.PosterInfo p
+{
+    margin: 5px;
+}
+.Comment
+{
+    border-color: var(--darkerColor); margin: 5px;
+}
+.CommenterInfo
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.CommenterInfo img
+{
+ border-color: var(--darkerColor); margin-bottom: 0px;
+}
+.CommenterInfo p
+{
+    margin: 5px;
+}
+.PostBubble
+{
+    margin: 10px;
+}
+.CommentSection
+{
+    margin-top: 0px; border-radius: 25px; background-color: var(--lighterColor); border-style: dashed; border-color: var(--darkerColor);
+    border-bottom-style: none; padding: 5px;
+}
+#CommentSectionTitle
+{
+    margin: 10px;
+}
+.WholePost
+{
+    margin: 10px;
+    border-radius: 25px;
+    background-color: var(--darkerColor);
+}
+.MoreInfo
+{
+    background-color: var(--lighterColor); border-radius: 25px; border-style: dashed; border-color: var(--darkerColor);
+}
+.MoreInfo h2
+{
+    margin: 5px;
+}
+.MoreInfo p
+{
+    margin: 5px;
+}

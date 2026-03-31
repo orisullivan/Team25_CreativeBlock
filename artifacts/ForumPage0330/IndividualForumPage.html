@@ -30,6 +30,7 @@
         <ul class = "PageLayout">
             <div class = "BackAndEntry">
                 <a href = "ForumPage.html"><button type = "button" id = "BackButton"> <= Return to Forum Search Page </button></a>
+                <div class = "WholePost">
                 <div class = "InitialPost">
                     <div class = "PosterInfo">
                         <img src = "funy squirrel.webp" id = "PosterPFP">
@@ -39,12 +40,32 @@
                     <div class = "PostBubble">
                         <div class = "PostContent">
                             <h2 class = "EntryDisplayTitle"> Post Title <button type = "button" id = "FavButton" data-toggle = "unfavorited"> <img src = "empty star.png" id = "FavButtonImg"></button></h2>
-
+                            <p> Post Content </p>
                         </div>
                     </div>
                 </div>
-                <div class = "CommentSection"></div>
-                <div class = "MoreInfo"></div>
+                <div class = "CommentSection">
+                    <h2 id = "CommentSectionTitle">Comments:</h2>
+                    <div class = "Comment">
+                        <div class = "CommenterInfo">
+                        <img src = "funy squirrel.webp" id = "CommenterPFP" class = "pfp">
+                        <p> Username</p>
+                        <p> Date</p>
+                    </div>
+                    <div class = "PostBubble">
+                        <div class = "CommentContent">
+                            <h2 class = "CommentTitle"> Comment Title </h2>
+                            <p> Comment Content</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class = "MoreInfo">
+                    <h2> More Info:</h2>
+                    <p> Tags: </p>
+                    <p> Mentioned Links: </p>
+                </div>
+            </div>
             </div>
         </ul>
         <div class = "AdSpace">
