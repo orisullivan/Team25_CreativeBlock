@@ -1,43 +1,35 @@
+"use client";
 import "../../globals.css";
+import "../../CSSFormattingHeader.css";
 import "./CSSFormattingMaterialSearching.css";
-import Link from 'next/link';
+import "../CSSFormattingSearchPages.css";
+import "../../BaseScript.js";
+
+import React, {useEffect, useState} from "react";
+import { SignInDirect } from "@/components/signin-redirect";
 
 export default function Material() {
   return (
     <div>
     <header>
-        <ul className = "topnav">
-        <img src = "/logo.png" id = "Logo"/>
-        <div id = "TitleAndSloganBox">
-            <h1 id = "Title"> The Creative Block </h1>
-            <h2 id = "Slogan"> Placeholder for a Slogan</h2>
-        </div>
-        <ul className = "PageLinks">
-            <li> <a href = "./forum" id = "GoToForum">Forum</a></li>
-            <li><a href = "./patterns" id = "GoToPatternSearch">Pattern Search</a></li>
-            <li> <a href = "./materials" id = "GoToMaterialSearch">Material Search</a></li>
-        </ul>
-        <li> <a href = "#">
-            <div id = "ProfileBox">
-                <img src = "guest pfp.webp" id = "pfp"/>
-                <p id = "Username"> Guest</p>
-            </div>
-        </a></li>
-    </ul>
+       <ul className = "topnav">
+                   <div id = "header"></div>
+                   <div className = "ProfileBox">
+                       <SignInDirect className = "clickToLogin"/>
+                       <p id = "YourUserName" className = "Username"> Guest</p>
+                   </div>
+               </ul>
     </header>
     <div className = "body">
         <div id = "Page">
         <ul className = "PageLayout">
             <div className = "TitleAndSearch">
-            <div className="wrapper">
-                <div className="wrapper3">
-                    <h1><b>Find a Material!</b></h1>
-                </div>
+                <div className="PageTitle"><h1><b>Find a Material!</b></h1></div>
             <div className="search-container">
                 <input type="text" placeholder="Search..."/>
                 <i className="fa fa-search"></i>
             </div>
-            <div className="wrapper2">
+            <div className="Search">
                 <form action="">
                 <h2>Narrow Your Search Here!</h2>
                 <div className="input-box">
@@ -87,9 +79,8 @@ export default function Material() {
             </form>
         </div>
     </div>
-            </div>
         </ul>
-        <div id = "AdSpace">
+        <div className = "AdSpace">
             <h2 id = "AdTitle"> Advertisements </h2>
             <img src = "/ad1.png" id = "ad1"/>
             <img src = "/ad2.png" id = "ad2"/>

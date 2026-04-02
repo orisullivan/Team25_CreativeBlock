@@ -1,333 +1,148 @@
-html
-{
-    cursor: url('/scissors1.png'), auto;
-}
-html:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
 :root
 {
     --darkerColor: #957DAD;
     --lighterColor: #E0BBE4;
 }
-ul.topnav
-{
-    background-color: var(--lighterColor);
-    display : flex;
-    list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 0;
-    height: 135px;
-    border-radius: 25px;
-    border-style: dashed;
-    
-}
-#Logo
-{
-    margin-top: 20px;
-    width: 140x;
-    height: 100px;
-    border-radius: 25px;
-}
-#TitleAndSloganBox
-{
-    display: inline-block;
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#Title
-{
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-top: 8px;
-    margin-bottom: 0px;
-}
-#Slogan
-{
-    font-size: medium;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-ul.PageLinks
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul.PageLinks li a 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
-    border-radius: 25px;
-    border-style: dashed;
-    box-shadow: 5px 5px 5px var(--darkerColor);
-}
-#GoToForum
-{
-    background-color: #e0bbe4;
-}
-#GoToPatternSearch
-{
-    background-color: #fec8d8;
-}
-#GoToMaterialSearch
-{
-    background-color: #d6efed;
-}
-ul.PageLinks li a:hover
-{
-    background-color: #957dad;
-    color: white;
-}
-li a:hover
-{
-    cursor: url('/scissors1.png'), auto;
-}
-li a:hover:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
-#ProfileBox
-{
-    height: 100px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-#pfp
-{
-    height: 80px;
-    border-radius: 25px;
-    border-color: var(--darkerColor);
-    border-style: solid;
-    border-width: 2px;
-    margin-bottom: 0px;
-
-}
-#Username
-{
-    text-align: center;
-    margin-top: 0px;
-    color: black;
-    text-decoration: none;
-    font-family: Verdana, sans-serif; 
-}
 body
 {
     background-color: var(--darkerColor);
 }
-#Page
+h1
 {
-    display:inline-flex;
-    width: 100%;
-    justify-content: space-between;
-}
-ul.PageLayout
-{
-    display : flex;
-    list-style-type: none;
-    margin: 5px;
-    padding: 0;
-    background-color: #e0bbe4;
-    height: 1200px;
-    width: 85vmax;
-    border-radius: 25px;
-    border-style: dashed;
-}
-ul.PageLayout h1
-{
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
     text-shadow: 5px 5px 5px var(--darkerColor);
 }
-ul.PageLayout h2
+h2
 {
-    font-size: large;
-    font-family: Verdana, sans-serif;
     text-shadow: 5px 5px 5px var(--darkerColor);
 }
-#TitleSearchFilters
+ul.topnav
 {
-    text-align: center;
-    border-radius: 25px;
-    width: 200px;
-    border-right: #957dad;
-    border-right-style: dashed;
-    font-family: Verdana, sans-serif;
-}
-#Entries
-{
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    width: 800px;
-}
-.ForumEntry
-{
-  background-color:#957dad;
-  height: 240px;
-  border-radius: 25px;
-  border-style: solid;
-  border-color: #957dad;
-  border-width: 5px;
-  width: 780px;
-  margin-bottom: 20px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-.InfoWTitle
-{
-    display: block;
-    height: 90px;
-    background-color: #e0bbe4;
-    border-radius: 25px;
-    border-style: dashed;
-    border-color:#957dad;
-    border-bottom-style: none;
-    padding: 0px;
-}
-.EntryTitle
-{
-    height: 10px;
-    margin-left: 10px;
-}
-.Info
-{
-    display: flex;
-    background-color: #e0bbe4;
-    height: 40px;
-    border-radius: 25px;
-    border-color: #957dad;
-    border-style: dashed;
-}
-.Info div
-{
-    display: inline-flex;
-    width: fit-content;
-    margin-left: 10px;
-    font-family: Verdana, sans-serif;
-    overflow: none;
-}
-.ForumEntry #Content
-{
-    display: flex;
-    height: 70px;
-    background-color: #e0bbe4;
-    border-radius: 25px;
-    border-style: dashed;
-    border-color:#957dad;
-    padding: 10px;
-    overflow: hidden;
-    font-family: Verdana, sans-serif;
-}
-.ForumEntry #Links
-{
-    display: flex;
-    height: 30px;
-    background-color: #e0bbe4;
-    border-radius: 25px;
-    border-style: dashed;
-    border-color:#957dad;
-    overflow: hidden;
-    border-top-style: none;
-    padding: 10px;
-    font-family: Verdana, sans-serif;
-}
-.ForumEntry li a
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
-    margin-top: 15px;
-}
-#Content
-{
-    background-color: #e0bbe4;
-    height: 150px;
-    border-radius: 25px;
-    border-style: dashed;
-    border-color: #957dad;
-    border-top: #e0bbe4;
-}
-#AdSpace
-{
-    list-style-type: none;
     background-color: var(--lighterColor);
-    height: 1200px;
-    width: 15vmax;
-    margin: 5px;
-    border-radius: 25px;
-    border-style: dashed;
 }
-#AdTitle
+ul.PageLinks li a
 {
-    font-size: large;
-    text-align: center;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    width: 190px;
-    margin-bottom: 5px;
+    box-shadow: 5px 5px 5px var(--darkerColor);
 }
-#ad1
+.PFP
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    border-color: var(--darkerColor);
 }
-#ad2
+.clickToLogin
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    background: none;
 }
-#ad3
+.PageLayout
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    background-color: var(--lighterColor);
 }
-#ad4
+.AdSpace
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    background-color: var(--lighterColor);
 }
-#ad5
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-
 .Search .btn 
 {
     background: var(--darkerColor);
+}
+.TitleAndSearch 
+{
+    border-right: 2px dashed var(--darkerColor);
+}
+.TitleAndSearch .search-container input
+{
+    border: 2px solid var(--darkerColor);
+}
+.EntryLayout
+{
+    background-color: var(--darkerColor);
+    border-color: var(--darkerColor);
+}
+.InfoWTitle
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+#Content
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+#Links
+{
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
+}
+.EntryDisplayTitle
+{
+    display: flex;
+    align-items: center;
+}
+.InitialPost
+{
+    border-color: var(--darkerColor);
+    background-color: var(--lighterColor);
+    border-bottom-style: none;
+}
+.PosterInfo
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.PosterInfo img
+{
+    border-color: var(--darkerColor); margin-bottom: 0px;
+}
+.PosterInfo p
+{
+    margin: 5px;
+}
+.Comment
+{
+    border-color: var(--darkerColor); margin: 5px;
+}
+.CommenterInfo
+{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+.CommenterInfo img
+{
+ border-color: var(--darkerColor); margin-bottom: 0px;
+}
+.CommenterInfo p
+{
+    margin: 5px;
+}
+.PostBubble
+{
+    margin: 10px;
+}
+.CommentSection
+{
+    margin-top: 0px; border-radius: 25px; background-color: var(--lighterColor); border-style: dashed; border-color: var(--darkerColor);
+    border-bottom-style: none; padding: 5px;
+}
+#CommentSectionTitle
+{
+    margin: 10px;
+}
+.WholePost
+{
+    margin: 10px;
+    border-radius: 25px;
+    background-color: var(--darkerColor);
+}
+.MoreInfo
+{
+    background-color: var(--lighterColor); border-radius: 25px; border-style: dashed; border-color: var(--darkerColor);
+}
+.MoreInfo h2
+{
+    margin: 5px;
+}
+.MoreInfo p
+{
+    margin: 5px;
 }

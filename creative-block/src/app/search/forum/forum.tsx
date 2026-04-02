@@ -1,57 +1,53 @@
 "use client";
+import "../../globals.css";
+import "../CSSFormattingSearchPages.css";
+import "./CSSFormattingForum.css";
+import "../../CSSFormattingHeader.css";
+import "../../BaseScript.js";
 import React, {useEffect, useState} from "react";
 import { SignInDirect } from "@/components/signin-redirect";
-import "../../globals.css";
-import "./CSSFormattingForum.css";
-import Link from 'next/link';
-import Script from 'next/script.js';
 import Template from "@/src/app/search/forum/template"
-// import "./ForumScript"
 
 export const ForumPage: React.FC = () => {
 
 return <div className="">
     <header>
         <ul className = "topnav">
-        <img src = "/logo.png" id = "Logo"/>
-        <div id = "TitleAndSloganBox">
-            <h1 id = "Title"> The Creative Block </h1>
-            <h2 id = "Slogan"> Placeholder for a Slogan</h2>
-        </div>
-        <ul className = "PageLinks">
-            <li> <a href = "./forum" id = "GoToForum">Forum</a></li>
-            <li><a href = "./patterns" id = "GoToPatternSearch">Pattern Search</a></li>
-            <li> <a href = "./materials" id = "GoToMaterialSearch">Material Search</a></li>
-        </ul>
-        {/* <li> <a href = "#"> */}
-        <div id = "ProfileBox">
-                <SignInDirect className="pfp"/>
-                <p id = "Username"> Guest</p>
+            <div id = "header"></div>
+            <div className = "ProfileBox">
+                <SignInDirect className = "clickToLogin"/>
+                <p id = "YourUserName" className = "Username"> Guest</p>
             </div>
-        {/* </a></li> */}
-    </ul>
+        </ul>
     </header>
     <div id="body">
-
         <div id = "Page">
-        <ul className = "PageLayout">
-            <div id = "TitleSearchFilters">
-                <h1 id = "PageTitle"> Forum </h1>
-                <h2> Search the forum!</h2>
-                <form>
-                    <input type="text" id = "SearchBar"/>
-                </form>
-                <button> Search! </button>
-                <h2> Filter/Sort By: </h2>
-                <p> Date Added: </p>
-                <p> Tags: </p>
-                <button> Search!</button>
-            </div>
-            <div id = "Entries">
-            </div>
+            <ul className = "PageLayout">
+                <div className = "TitleAndSearch">
+                    <div className="PageTitle"><h1><b>Search The Forum!</b></h1></div>
+                    <div className="search-container">
+                        <input type="text" placeholder="Search..."/>
+                        <i className="fa fa-search"></i>
+                    </div>
+                    <div className="Search">
+                        <form action="">
+                            <h2>Narrow Your Search Here!</h2>
+                            <div className="input-box">
+                                <label><b>Tags</b></label><br></br>
+                                <input type="checkbox" id="tag1" name="tag1" value="Tag 1"/>
+                                <label htmlFor="difficulty1">Tag 1</label><br></br>
+                                <input type="checkbox" id="tag2" name="tag2" value="Tag 2"/>
+                                <label htmlFor="difficulty2">Tag 2</label><br></br>
+                                <input type="checkbox" id="tag3" name="tag3" value="Tag 3"/>
+                                <label htmlFor="difficulty3">Tag 3</label><br></br>
+                            </div>
+                            <button type="submit" className="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            <div id = "Entries"></div>
         </ul>
-
-        <div id = "AdSpace">
+        <div className = "AdSpace">
             <h2 id = "AdTitle"> Advertisements </h2>
             <img src = "/ad1.png" id = "ad1"/>
             <img src = "/ad2.png" id = "ad2"/>

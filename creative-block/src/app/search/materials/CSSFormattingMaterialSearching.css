@@ -1,321 +1,108 @@
-html
+:root
 {
-    cursor: url('/scissors1.png'), auto;
+    --darkerColor : #898AA6;
+    --lighterColor : #d6efed;
 }
-html:active
+body
 {
-    cursor: url('/scissors2.png'), auto;
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
 }
 ul.topnav
 {
-    display : flex;
-    list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 0;
-    background-color: #d6efed;
-    height: 135px;
-    border-radius: 25px;
-    border-style: dashed;
-    
+    background-color: var(--lighterColor);
 }
-#Logo
+ul.PageLinks li a
 {
-    margin-top: 20px;
-    width: 140x;
-    height: 100px;
-    border-radius: 25px;
+    box-shadow: 5px 5px 5px var(--darkerColor);
 }
-#TitleAndSloganBox
+.PFP
 {
-    display: inline-block;
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    border-color: var(--darkerColor);
 }
-
-#Title
+.PageLayout
 {
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #85586f;
-    margin-top: 8px;
-    margin-bottom: 0px;
+    background-color: var(--lighterColor);
 }
-#Slogan
+.AdSpace
 {
-    font-size: medium;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #898aa6;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    background-color: var(--lighterColor);
 }
-ul.PageLinks
+.Search .btn 
 {
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    background: var(--darkerColor);
 }
-ul.PageLinks li a 
+.TitleAndSearch 
 {
+    border-right: 2px dashed var(--darkerColor);
+}
+.TitleAndSearch .search-container input
+{
+    border: 2px solid var(--darkerColor);
+}
+.EntryLayout
+{
+    background-color: var(--darkerColor);
+    border-color: var(--darkerColor);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
+}
+.MaterialImageHolder
+{
+    width:fit-content;
+}
+#MaterialImage
+{
+    height: 230px;
+    width: 230px;
     border-radius: 25px;
+    border-color: var(--lighterColor);
     border-style: dashed;
-    box-shadow: 5px 5px 5px #898aa6;
+    border-width: 5px;
 }
-#GoToForum
+.MaterialInfo
 {
-    background-color: #e0bbe4;
-}
-#GoToPatternSearch
-{
-    background-color: #fec8d8;
-}
-#GoToMaterialSearch
-{
-    background-color: #d6efed;
-}
-ul.PageLinks li a:hover
-{
-    background-color: #957dad;
-    color: white;
-}
-li a:hover
-{
-    cursor: url('/scissors1.png'), auto;
-}
-li a:hover:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
-#ProfileBox
-{
-    height: 100px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-#pfp
-{
-    height: 80px;
+    height: 220px;
+    width: 350px;
     border-radius: 25px;
-    border-color: #898aa6;
-    border-style: solid;
-    border-width: 2px;
-    margin-bottom: 0px;
-
-}
-#Username
-{
-    text-align: center;
-    margin-top: 0px;
-    color: black;
-    text-decoration: none;
-    font-family: Verdana, sans-serif; 
-}
-body 
-{
-    background-color: #898aa6;
-}
-#Page
-{
-    display:inline-flex;
-    width: 100%;
-    justify-content: space-between;
-}
-ul.PageLayout
-{
-    display : flex;
-    list-style-type: none;
     margin: 5px;
-    padding: 0;
-    background-color: #d6efed;
-    height: 1200px;
-    width: 85vmax;
-    border-radius: 25px;
-    border-style: dashed;
+    padding : 5px;
+    background-color: var(--lighterColor);
 }
-ul.PageLayout h1
+.InfoWTitle
 {
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #898aa6;
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
 }
-ul.PageLayout h2
+#Content
 {
-    font-size: large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #898aa6;
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
 }
-
-#AdSpace
+#Links
 {
-    list-style-type: none;
-    background-color: #d6efed;
-    height: 1200px;
-    width: 15vmax;
-    margin: 5px;
-    border-radius: 25px;
-    border-style: dashed;
+    background-color: var(--lighterColor);
+    border-color: var(--darkerColor);
 }
-#AdTitle
+.EntryDisplay
 {
-    font-size: large;
-    text-align: center;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #898aa6;
-    width: 190px;
+    background-color: var(--darkerColor); border-color: var(--darkerColor);
 }
-#ad1
+.EntryHeader
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
 }
-#ad2
+.EntryDisplayContent
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
 }
-#ad3
+.FeaturedIn
 {
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad4
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-#ad5
-{
-    margin-top: 5px;
-    height: 180px;
-    margin-left: 10px;
-
-}
-.wrapper2 
-{
-    width: 300px;
-    background: #fff;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: black;
-    border-radius: 25px;
-    padding: 10px 10px;
-    transition: height .2s ease;
-}
-
-.wrapper3 {
-    width: 300px;
-    background: #fff;
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: black;
-    border-radius: 25px;
-    transition: height .2s ease;
-    justify-content: center;
-}
-
-.wrapper2 h2 {
-    font-size: 18px;
-    text-align: center;
-}
-
-.wrapper.active {
-    height: 520px;
-    width: 500px;
-}
-
-.wrapper h1 {
-    font-size: 36px;
-    text-align: center;
-}
-
-.wrapper .input-box {
-    justify-content: right;
-}
-
-.wrapper2 .btn {
-    width: 100%;
-    height: 45px;
-    background: #D6EFED;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-}
-
-.wrapper2 .btn:hover {
-    background: #bab9b9;
-}
-
-.wrapper .search-container {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    position: relative;
-    justify-content: center;
-}
-
-.wrapper .search-container input {
-    width:300px;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border:none;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.wrapper .search-container i {
-    position:absolute;
-    top:50%;
-    right:50px;
-    transform: translateY(-50%);
-}
-.TitleAndSearch
-{
-    display: flex;
-    padding: 10px;
-    height: fit-content;
-    border-radius: 25px;
-    border-style: dashed;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    border-color: #898aa6;
-
-}
-.TitleAndSearch div
-{
-    margin: auto;
+    background-color: var(--lighterColor); border-color: var(--darkerColor);
 }
