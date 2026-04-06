@@ -23,8 +23,8 @@ def calculateTax(sender, receiver, transactionValue):
         return tempData
 
 
-def recordTax():
-    record = calculateTax()
+def recordTax(sender, receiver, transactionValue):
+    record = calculateTax(sender, receiver, transactionValue)
     csvDataTemp = []
     with open("./taxRecord.csv", "a", newline='') as recordFile:
         writer = csv.writer(recordFile)
