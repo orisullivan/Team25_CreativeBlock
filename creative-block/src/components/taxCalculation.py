@@ -52,6 +52,8 @@ def recordTax(sender, receiver, transactionValue):
         writer.writerows(csvDataTemp)
     jarFile.close()
 
+    return record[2]
+
 def findReceiverMoney(receiver):
     receiverMoney = 0
     with open("./jarCoins.csv", "r", newline='') as jarFile:

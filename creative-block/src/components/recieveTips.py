@@ -1,5 +1,6 @@
 import csv
 import taxCalculation as tc
+import sendTips as st
 import random
 
 dbPath = "../pages/_userDB.csv"
@@ -9,7 +10,10 @@ tipJarAlerts = ["ALERT! Your tip jar is getting full!", " loved your work!",
                 "$ added to your jar by "]
 
 def receiveTip(username, sender, amount):
-    
+    receiverMoney = 0
+    csvDataTemp = []
+    receiverMoney = tc.recordTax(sender, username, amount)
+    return receiverMoney
 
 def tipJarAlert(sender, receiver, transactionValue, postName):
     #alert when values change in the tip jar
@@ -22,10 +26,25 @@ def tipJarAlert(sender, receiver, transactionValue, postName):
     else:
         return tipJarAlerts[ran]
 
-def tipDisplay():
-    
-def removeTip():
+def tipDisplay(username):
+    return tc.findReceiverMoney(username)
 
-def alertIssue():
+def removeTip(accountNum, username):
+    if (st.validCard(accountNum, username)):
+        amount = tc.emptyJar(username)
+        return amount
+    else:
+        return 0
 
-def sendThanks():
+def alertIssue(accountNum, username, sender, amount):
+    if not st.validCard(accountNum, username):
+        return "Invalid card, please check your card details."
+    if sender == None:
+        return "No sender. Transaction error."
+    if username == None:
+        return "No receiver. Invalid tip, please confirm the username again."
+    if amount <= 0:
+        return "Invalid tip amount, please input a tip of 1 cent or more."
+
+def sendThanks(sender, username):
+    return sender + ',' + username + ' thanks you for your tip!'
