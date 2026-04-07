@@ -1,5 +1,6 @@
 import "../../globals.css";
 import "./CSSformatting.css"
+import "../../CSSFormattingHeader.css"
 import Image from "next/image";
 import Link from 'next/link';
 import { use } from 'react'
@@ -49,7 +50,7 @@ export default function Home( userData ){
                     <h1>Profile Picture:</h1>
                 <li> <a href = "#">
                 <div>
-                  <img src = "guest pfp.webp" id = "pfp"></img>
+                  <img src = "/guest pfp.webp" id = "PFP"></img>
                      <p> change Profile Pic </p>
                 </div>
 
