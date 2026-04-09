@@ -2,7 +2,7 @@
 ul.topnav
 {display : flex; list-style-type: none; margin: 10px; padding: 0px;height: 120px;border: 2px dashed;}
 #Logo
-{margin: 10px 10px 10px 10px; height: 110px;}
+{margin: 10px 10px 0px 10px; height: 100px;}
 #TitleAndSloganBox
 {display: inline-block; align-items: center; justify-items: center; height: 100px; margin-top: 10px; 
 margin-right: 10px; color: black;}
