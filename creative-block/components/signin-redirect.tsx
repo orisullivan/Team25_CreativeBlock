@@ -6,6 +6,6 @@ export const SignInDirect = (props: {children?: React.ReactNode; className?:stri
 {
     const router = useRouter();
     return <button className={props.className} onClick={() => {router.push("/login")}}>
-        {props.children || <img src = "guest pfp.webp" id = "pfp"/>}
+        {props.children || <img src = "/guest pfp.webp" id = "loginPFP"/>}
         </button>
 }

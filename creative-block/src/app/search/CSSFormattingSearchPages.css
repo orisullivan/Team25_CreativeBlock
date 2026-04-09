@@ -1,0 +1,46 @@
+.TitleAndSearch
+{text-align: center; width: 350px;display:inline; padding: 10px;}
+.PageTitle 
+{width: 300px; background: #fff; backdrop-filter: blur(20px); box-shadow: 0 0 10px rgba(0, 0, 0, .2); color: black; 
+transition: height .2s ease; justify-content: center; margin: auto; padding: 10px;}
+.TitleAndSearch .search-container 
+{margin-top: 10px; margin-bottom: 10px; position: relative; justify-content: center;}
+.TitleAndSearch .search-container input 
+{width:300px; font-size: 18px; padding: 10px 20px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); background: white;}
+.TitleAndSearch .search-container i 
+{position:absolute; top:50%; right:50px; transform: translateY(-50%);}
+.TitleAndSearch .active 
+{height: 520px; width: 500px;}
+.TitleAndSearch h1 
+{font-size: 36px; text-align: center;}
+.TitleAndSearch .input-box 
+{justify-content: right;}
+.Search 
+{width: 300px; background: #fff; border: 2px solid rgba(255, 255, 255, .2); backdrop-filter: blur(20px); 
+ box-shadow: 0 0 10px rgba(0, 0, 0, .2);color: black; padding: 10px 10px; transition: height .2s ease;margin: auto;}
+.Search h2 
+{font-size: 18px; text-align: center;}
+.Search .btn 
+{width: 100%; height: 45px; outline: none;box-shadow: 0 0 10px rgba(0, 0, 0, .1); cursor: pointer; 
+ font-size: 16px; color: #333; font-weight: 600;}
+.Search .btn:hover 
+{background: #bab9b9;}
+#Entries
+{display: inline; justify-content: center; align-items: center;}
+.EntryLayout
+{height: 240px; border: 5px solid; width: 600px; margin-bottom: 20px; margin-left: 5px; margin-top: 10px;}
+.InfoWTitle
+{display: block; height: 90px; border: 2px dashed; border-bottom: none; padding: 0px;}
+.EntryTitle
+{height: 10px; margin-left: 10px;}
+.Info
+{display: inline-flex; height: 40px;}
+.Info div
+{display: inline-flex; width: fit-content; margin-left: 10px;overflow: none;}
+#Content
+{display: flex; height: 70px; border: 2px dashed; padding: 10px; overflow: hidden;}
+#Links
+{display: flex; height: 30px; border: 2px dashed; overflow: hidden; border-top: none; padding: 10px;}
+.ForumEntry li a
+{display: flex; justify-content: center; align-items: center; text-decoration: none; margin-top: 15px;}
+

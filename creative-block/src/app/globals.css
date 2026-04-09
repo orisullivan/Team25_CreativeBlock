@@ -1,185 +1,26 @@
-@import "tailwindcss";
-
 html
-{
-    cursor: url('/scissors1.png'), auto;
-}
+{cursor: url('/scissors1.png'), auto;}
 html:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
-
-ul.topnav
-{
-    display : flex;
-    list-style-type: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    padding: 0;
-    background-color: #c9bbcf;
-    height: 135px;
-    border-radius: 25px;
-    border: dashed 3px #000;
-    
-}
-#Logo
-{
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-}
-#TitleAndSloganBox
-{
-    display: inline-block;
-    align-items: center;
-    justify-items: center;
-    height: 100px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#Title
-{
-    font-size: xxx-large;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-#Slogan
-{
-    font-size: medium;
-    font-family: Verdana, sans-serif;
-    text-shadow: 5px 5px 5px #957dad;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-ul.PageLinks
-{
-    display : flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-ul.PageLinks li a 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: Verdana, sans-serif;
-    border-radius: 25px;
-    border-style: dashed;
-    box-shadow: 5px 5px 5px #957dad;
-}
-#GoToForum
-{
-    background-color: #e0bbe4;
-}
-#GoToPatternSearch
-{
-    background-color: #fec8d8;
-}
-#GoToMaterialSearch
-{
-    background-color: #d6efed;
-}
-ul.PageLinks li a:hover
-{
-    background-color: #957dad;
-    color: white;
-}
+{cursor: url('/scissors2.png'), auto;}
 li a:hover
-{
-    cursor: url('/scissors1.png'), auto;
-}
+{cursor: url('/scissors1.png'), auto;}
 li a:hover:active
-{
-    cursor: url('/scissors2.png'), auto;
-}
-#ProfileBox
-{
-    height: 100px;
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-#pfp
-{
-    height: 80px;
-    border-radius: 25px;
-    border-color: #957dad;
-    border-style: solid;
-    border-width: 2px; 
-    margin-bottom: 0px;
-
-}
-#Username
-{
-    text-align: center;
-    margin-top: 0px;
-    color: black;
-    text-decoration: none;
-    font-family: Verdana, sans-serif; 
-}
-body 
-{
-    background-color: #e0bbe4;
-}      
-
+{cursor: url('/scissors2.png'), auto;}
+*
+{border-radius: 25px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-decoration: none;}
 #Page
-{
-    display:inline-flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-:root
-{
-    --darkerColor: #957DAD;
-    --lighterColor: #E0BBE4;
-}
-body
-{
-    background-color: var(--darkerColor);
-}
-h1
-{
-    text-shadow: 5px 5px 5px var(--darkerColor);
-}
-h2
-{
-    text-shadow: 5px 5px 5px var(--darkerColor);
-}
-ul.topnav
-{
-    background-color: var(--lighterColor);
-}
-ul.PageLinks li a
-{
-    box-shadow: 5px 5px 5px var(--darkerColor);
-}
-#pfp
-{
-    border-color: var(--darkerColor);
-}
-.PageLayout
-{
-    background-color: var(--lighterColor);
-}
+{display: inline-flex;}
+ul.PageLayout
+{display : inline-flex; margin: 10px; padding: 0; width: 1000px; height: fit-content; border-style: dashed;}
+ul.PageLayout h1
+{font-size: xxx-large;}
+ul.PageLayout h2
+{font-size: large;}
 .AdSpace
-{
-    background-color: var(--lighterColor);
+{list-style-type: none;  height: fit-content; width: 200px; margin: 10px; border-style: dashed;}
+#AdTitle 
+{font-size: large; text-align: center; width: 190px; margin-bottom: 5px;
 }
-.Search .btn 
-{
-    background: var(--darkerColor);
-}
+.AdSpace img
+{margin-top: 5px; height: 180px; margin-left: 10px; border-radius: 0px;}
+
