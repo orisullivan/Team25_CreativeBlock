@@ -28,9 +28,9 @@ transition: height .2s ease; justify-content: center; margin: auto; padding: 10p
 #Entries
 {display: inline; justify-content: center; align-items: center;}
 .EntryLayout
-{height: 240px; border: 5px solid; width: 600px; margin-bottom: 20px; margin-left: 5px; margin-top: 10px;}
+{height: 240px; width: 600px; margin-bottom: 20px; margin-left: 5px; margin-top: 10px;}
 .InfoWTitle
-{display: block; height: 90px; border: 2px dashed; border-bottom: none; padding: 0px;}
+{display: block; height: 90px; border-bottom: none; padding: 0px;}
 .EntryTitle
 {height: 10px; margin-left: 10px;}
 .Info
@@ -38,9 +38,9 @@ transition: height .2s ease; justify-content: center; margin: auto; padding: 10p
 .Info div
 {display: inline-flex; width: fit-content; margin-left: 10px;overflow: none;}
 #Content
-{display: flex; height: 70px; border: 2px dashed; padding: 10px; overflow: hidden;}
+{display: flex; height: 70px; padding: 10px; overflow: hidden;}
 #Links
-{display: flex; height: 30px; border: 2px dashed; overflow: hidden; border-top: none; padding: 10px;}
+{display: flex; height: 30px; overflow: hidden; border-top: none; padding: 10px;}
 .ForumEntry li a
 {display: flex; justify-content: center; align-items: center; text-decoration: none; margin-top: 15px;}
 

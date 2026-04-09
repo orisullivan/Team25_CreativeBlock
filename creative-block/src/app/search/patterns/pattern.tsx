@@ -7,8 +7,9 @@ import "../../BaseScript.js";
 
 import React, {useEffect, useState} from "react";
 import { SignInDirect } from "@/components/signin-redirect";
+import { Entry } from "./entry.jsx"
 
-export default function Pattern() {
+export default function Pattern({ data }) {
   return (
     <div>
     <header>
@@ -68,7 +69,24 @@ export default function Pattern() {
             <button type="submit" className="btn">Submit</button>
         </form>
         </div>
-    </div>
+        </div>
+        <div id = "Entries">
+            {Array.isArray(data) ? (data.map((entry: any,index: any) => (
+                        <div key = {index}>
+                        <Entry
+                          entryTitle = {entry.PatternName}
+                          image={entry.PatternImage}
+                          user={entry.User}
+                          date ={((JSON.stringify(entry.Date)).toString().split("T")[0]).replace(/["]/gi, "")}
+                          difficulty={entry.Difficulty}
+                          craftType={entry.CraftType}
+                          patternType={entry.PatternType}
+                          />
+                          </div>
+                      ))) : (
+              <p>No Pattern Entries Found.</p>)}
+        </div>
+    
         </ul>
         <div className = "AdSpace">
             <h2 id = "AdTitle"> Advertisements </h2>

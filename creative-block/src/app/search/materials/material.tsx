@@ -40,7 +40,6 @@ export default function Material({data}) {
             <Entry
               entryTitle = {entry.MaterialName}
               image={entry.MaterialImage}
-              date ={((JSON.stringify(entry.Date)).toString().split("T")[0]).replace(/["]/gi, "")}
               type={entry.MaterialType}
               brand={entry.MaterialBrand}
               color={entry.MaterialColor}
@@ -48,7 +47,7 @@ export default function Material({data}) {
               />
               </div>
           ))) : (
-  <p>No items found</p>
+  <p>No Materials found</p>
 )}
         
     </div>

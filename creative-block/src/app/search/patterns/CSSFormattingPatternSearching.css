@@ -23,6 +23,10 @@ ul.PageLinks li a
 {
     box-shadow: 5px 5px 5px var(--darkerColor);
 }
+#loginPFP
+{
+    border: 2px solid var(--darkerColor);
+}
 .PFP
 {
     border-color: var(--darkerColor);
@@ -50,7 +54,7 @@ ul.PageLinks li a
 .EntryLayout
 {
     background-color: var(--darkerColor);
-    border-color: var(--darkerColor);
+    border: 5px solid var(--darkerColor);
 }
 .InfoWTitle
 {
@@ -109,11 +113,11 @@ ul.PageLinks li a
     border-color: var(--darkerColor);
     display: flex;
 }
-.MaterialImageHolder
+.PatternImageHolder
 {
     width:fit-content;
 }
-#MaterialImage
+#PatternImage
 {
     height: 230px;
     width: 230px;
@@ -122,7 +126,7 @@ ul.PageLinks li a
     border-style: dashed;
     border-width: 5px;
 }
-.MaterialInfo
+.PatternInfo
 {
     height: 220px;
     width: 350px;

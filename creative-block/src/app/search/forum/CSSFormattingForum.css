@@ -23,9 +23,9 @@ ul.PageLinks li a
 {
     box-shadow: 5px 5px 5px var(--darkerColor);
 }
-.PFP
+#loginPFP
 {
-    border-color: var(--darkerColor);
+    border: 2px solid var(--darkerColor);
 }
 .clickToLogin
 {
@@ -54,22 +54,22 @@ ul.PageLinks li a
 .EntryLayout
 {
     background-color: var(--darkerColor);
-    border-color: var(--darkerColor);
+    border: 5px solid var(--darkerColor);
 }
 .InfoWTitle
 {
     background-color: var(--lighterColor);
-    border-color: var(--darkerColor);
+    border: 2px dashed var(--darkerColor);
 }
 #Content
 {
     background-color: var(--lighterColor);
-    border-color: var(--darkerColor);
+    border: 2px dashed var(--darkerColor);
 }
 #Links
 {
     background-color: var(--lighterColor);
-    border-color: var(--darkerColor);
+    border: 2px dashed var(--darkerColor);
 }
 .EntryDisplayTitle
 {
