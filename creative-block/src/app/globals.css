@@ -11,13 +11,13 @@ li a:hover:active
 #Page
 {display: inline-flex;}
 ul.PageLayout
-{display : inline-flex; margin: 10px; padding: 0; width: 1000px; height: fit-content; border-style: dashed;}
+{display : inline-flex; margin: 10px; padding: 0; width: 80svw; height: fit-content; border-style: dashed; border-width: 2px;}
 ul.PageLayout h1
 {font-size: xxx-large;}
 ul.PageLayout h2
 {font-size: large;}
 .AdSpace
-{list-style-type: none;  height: fit-content; width: 200px; margin: 10px; border-style: dashed;}
+{list-style-type: none;  height: fit-content; width: 15svw; margin: 10px; border-style: dashed; border-width: 2px;}
 #AdTitle 
 {font-size: large; text-align: center; width: 190px; margin-bottom: 5px;
 }
