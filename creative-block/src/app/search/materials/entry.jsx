@@ -1,4 +1,4 @@
-export function Entry({entryTitle,image, date, type, brand, color, usedIn})
+export function Entry({entryTitle,image, type, brand, color, usedIn})
 {
   return(
   <div className = "EntryLayout">
@@ -7,7 +7,6 @@ export function Entry({entryTitle,image, date, type, brand, color, usedIn})
                             </div>
                             <div className = "MaterialInfo">
                                 <div><h2>{entryTitle}</h2></div>
-                                <div><p>Date Added: {date}</p></div>
                                 <div><p>Material Type:{type}</p></div>
                                 <div><p>Brand:{brand}</p></div>
                                 <div><p>Color:{color}</p></div>

@@ -23,6 +23,10 @@ ul.PageLinks li a
 {
     box-shadow: 5px 5px 5px var(--darkerColor);
 }
+#loginPFP
+{
+    border: 2px solid var(--darkerColor);
+}
 .PFP
 {
     border-color: var(--darkerColor);
@@ -50,7 +54,7 @@ ul.PageLinks li a
 .EntryLayout
 {
     background-color: var(--darkerColor);
-    border-color: var(--darkerColor);
+    border: 5px solid var(--darkerColor);
     display: flex;
 }
 .MaterialImageHolder

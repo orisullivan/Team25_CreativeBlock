@@ -4,11 +4,10 @@ import "../CSSFormattingSearchPages.css";
 import "./CSSFormattingForum.css";
 import "../../CSSFormattingHeader.css";
 import "../../BaseScript.js";
-import React, {useEffect, useState} from "react";
 import { SignInDirect } from "@/components/signin-redirect";
-import Template from "@/src/app/search/forum/template"
+import { Entry } from "./entry.jsx"
 
-export const ForumPage: React.FC = () => {
+export default function ForumPage( {data} ){
 
 return <div className="">
     <header>
@@ -45,7 +44,22 @@ return <div className="">
                         </form>
                     </div>
                 </div>
-            <div id = "Entries"></div>
+            <div id = "Entries">
+                {Array.isArray(data) ? (data.map((entry: any,index: any) => (
+                            <div key = {index}>
+                            <Entry
+                              entryTitle = {entry.entryTitle}
+                              user={entry.User}
+                              date ={((JSON.stringify(entry.Date)).toString().split("T")[0]).replace(/["]/gi, "")}
+                              tags={entry.Tags}
+                              comments={entry.Comments}
+                              description={entry.Description}
+                              links={entry.MentionedLinks}
+                              />
+                              </div>
+                          ))) : (
+                  <p>No Forum Entries found</p>)}
+            </div>
         </ul>
         <div className = "AdSpace">
             <h2 id = "AdTitle"> Advertisements </h2>
@@ -56,32 +70,6 @@ return <div className="">
             <img src = "/ad5.png" id = "ad5"/>
         </div>
         </div>
-        <Template>
-            <div id = "Entry">
-            <div className = "ForumEntry">
-                        <div className = "InfoWTitle">
-                            <h2 className = ".EntryTitle"></h2>
-                                <div className = "Info">
-                                  <div> <p>By:</p>  <p className = "Author"> </p> </div>
-                                  <div><p>Added On:</p><p className = "Date"></p> </div>
-                                  <div><p>Tags:</p><p className = "Tags"></p></div>
-                                  <div><p>Comments:</p><p className = "Comments"></p></div>
-                                </div>    
-                        </div>
-                        <div>
-                                <div id = "Content">
-                                    <p> Description: </p><p className = "Description"></p>
-                                </div>
-                                <div id = "Links">  
-                                    <p> Mentioned Links:</p> 
-                                    {/*<li><a href = <p className = "Links" ></p></a></li>  */}
-                                 </div>
-                          </div>      
-            </div>
-            </div>
-        </Template>
-        {/* <div> <Script src="./forum/ForumScript.js" defer></Script> */}
-        {/* </div>  */}
     </div>
     </div>
 }
