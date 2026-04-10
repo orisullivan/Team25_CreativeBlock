@@ -27,7 +27,7 @@ export default async function readExcelData(filename) {
   },
   Tags: {
         column: 'Tags',
-        type: [String]
+        type: String
       },
       Description: {
         column: 'Description',

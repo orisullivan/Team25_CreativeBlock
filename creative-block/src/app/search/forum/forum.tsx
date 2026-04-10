@@ -4,10 +4,52 @@ import "../CSSFormattingSearchPages.css";
 import "./CSSFormattingForum.css";
 import "../../CSSFormattingHeader.css";
 import "../../BaseScript.js";
+
+import React, { useEffect, useState, useMemo } from "react";
 import { SignInDirect } from "@/components/signin-redirect";
 import { Entry } from "./entry.jsx"
 
 export default function ForumPage( {data} ){
+    const [database, setDatabase] = useState<any[]>([]); 
+      const [formData, setFormData] = useState({
+        textSearch: "",
+        author: "",
+        tags: "",
+      });
+      useEffect(() => {
+        if (Array.isArray(data)) {
+          setDatabase(data);
+        }
+      }, [data]);
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prev) => ({
+          ...prev,
+          [name]: value,
+        }));
+      };
+      const filteredForum = useMemo(() => {
+        if (!Array.isArray(database)) return [];
+        const q = formData.textSearch.toLowerCase();
+    
+        return database.filter((entry) => {
+          const title = (entry.entryTitle ?? "").toLowerCase();
+          const author = (entry.User ?? "").toLowerCase();
+          const  tags = (entry.Tags ?? "").toLowerCase();
+    
+          const matchesText = q === "" || title.includes(q);
+          const matchesAuthor = formData.author ? author === formData.author.toLowerCase() : true;
+          const matchesTags = formData.tags ? tags === formData.tags.toLowerCase() : true;
+    
+          return matchesText && matchesAuthor && matchesTags;
+        });
+      }, [database, formData]);
+    
+      const onSubmit = (e) => {
+        e.preventDefault();
+        console.log("Forum Data:", formData);
+      };
 
 return <div className="">
     <header>
@@ -23,33 +65,38 @@ return <div className="">
         <div id = "Page">
             <ul className = "PageLayout">
                 <div className = "TitleAndSearch">
+                     <form action="">
                     <div className="PageTitle"><h1><b>Search The Forum!</b></h1></div>
                     <div className="search-container">
-                        <input type="text" placeholder="Search..."/>
-                        <i className="fa fa-search"></i>
+                        <input type="text" placeholder="Search..." 
+                        className="fa fa-search"
+                        id = "textSearch" 
+                        name = "textSearch" 
+                        value = {formData.textSearch} 
+                        onChange={handleChange}/>
                     </div>
                     <div className="Search">
-                        <form action="">
                             <h2>Narrow Your Search Here!</h2>
                             <div className="input-box">
-                                <label><b>Tags</b></label><br></br>
-                                <input type="checkbox" id="tag1" name="tag1" value="Tag 1"/>
-                                <label htmlFor="difficulty1">Tag 1</label><br></br>
-                                <input type="checkbox" id="tag2" name="tag2" value="Tag 2"/>
-                                <label htmlFor="difficulty2">Tag 2</label><br></br>
-                                <input type="checkbox" id="tag3" name="tag3" value="Tag 3"/>
-                                <label htmlFor="difficulty3">Tag 3</label><br></br>
+                                <label><b>Tags</b></label>
+                                <select name = "tags" id = "tags" value = {formData.tags} onChange={handleChange}>
+                                    <option value=""></option>
+                                    <option value="crochet">Crochet</option>
+                                    <option value="knitting">Knitting</option>
+                                    <option value="yarn">Yarn</option>
+                                    <option value="fabric">Fabric</option>
+                                </select>
+                               
                             </div>
-                            <button type="submit" className="btn">Submit</button>
+                            </div>
                         </form>
                     </div>
-                </div>
             <div id = "Entries">
-                {Array.isArray(data) ? (data.map((entry: any,index: any) => (
+                {filteredForum.length > 0 ? (filteredForum.map((entry: any,index: any) => (
                             <div key = {index}>
                             <Entry
                               entryTitle = {entry.entryTitle}
-                              user={entry.User}
+                              author={entry.User}
                               date ={((JSON.stringify(entry.Date)).toString().split("T")[0]).replace(/["]/gi, "")}
                               tags={entry.Tags}
                               comments={entry.Comments}

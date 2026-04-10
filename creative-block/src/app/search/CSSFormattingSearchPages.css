@@ -18,13 +18,19 @@ transition: height .2s ease; justify-content: center; margin: auto; padding: 10p
 .Search 
 {width: 300px; background: #fff; border: 2px solid rgba(255, 255, 255, .2); backdrop-filter: blur(20px); 
  box-shadow: 0 0 10px rgba(0, 0, 0, .2);color: black; padding: 10px 10px; transition: height .2s ease;margin: auto;}
-.Search h2 
+.Search div
+{margin: 10px;}
+ .Search h2 
 {font-size: 18px; text-align: center;}
 .Search .btn 
 {width: 100%; height: 45px; outline: none;box-shadow: 0 0 10px rgba(0, 0, 0, .1); cursor: pointer; 
  font-size: 16px; color: #333; font-weight: 600;}
 .Search .btn:hover 
 {background: #bab9b9;}
+.Search select
+{
+    border-radius: 0px;
+}
 #Entries
 {display: inline; justify-content: center; align-items: center;}
 .EntryLayout
@@ -36,7 +42,7 @@ transition: height .2s ease; justify-content: center; margin: auto; padding: 10p
 .Info
 {display: inline-flex; height: 40px;}
 .Info div
-{display: inline-flex; width: 1000; margin-left: 10px;overflow: none;}
+{display: inline-flex; width: fit-content; margin-left: 10px;overflow: none;}
 #Content
 {display: flex; height: fit-content; padding: 10px; overflow: hidden;}
 #Links
