@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Existing User</title>
+    <link rel="stylesheet" href="forum_posting.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="forum_entry">
+        <form action="">
+            <h1>New Post</h1>
+            <div class="forum_entry_input">
+                <input type="text" placeholder="What's on your mind?" required>
+            </div>
+            <div class="forum_entry_picture">
+                <label>Upload Picture (Optional)<input class="file-upload-input" type="file" onchange="readURL(this)" accept="Image/*"></label>
+            </div>
+
+            <button type="submit" class="btn">Post</button>
+        </form>
+    </div>
+</body>
+</html>
