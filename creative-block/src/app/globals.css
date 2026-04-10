@@ -30,4 +30,10 @@ ul.PageLayout h2
 {background-color: #DEB6AB;}
 #GoToGuidelines
 {background-color: #AEEFC2;}
+#TipJarDiv
+{width:100%; position: absolute;}
+#TipJarButton
+{background: none; border: none;}
+#TipJarButtonImg
+{width: 50%; height: 50%;}
 

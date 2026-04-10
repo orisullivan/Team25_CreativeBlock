@@ -4,12 +4,19 @@ import "../CSSFormattingSearchPages.css";
 import "./CSSFormattingForum.css";
 import "../../CSSFormattingHeader.css";
 import "../../BaseScript.js";
+import "../../TipJarFormatting.css"
 
 import React, { useEffect, useState, useMemo } from "react";
 import { SignInDirect } from "@/components/signin-redirect";
 import { Entry } from "./entry.jsx"
+import { TipJar } from "../../../../public/TipJarPopUp"
 
 export default function ForumPage( {data} ){
+    const [isVisible, setIsVisible] = useState(false);
+    const toggleDiv = () => {
+    setIsVisible((prev) => !prev);
+    };
+
     const [database, setDatabase] = useState<any[]>([]); 
       const [formData, setFormData] = useState({
         textSearch: "",
@@ -45,14 +52,35 @@ export default function ForumPage( {data} ){
           return matchesText && matchesAuthor && matchesTags;
         });
       }, [database, formData]);
-    
-      const onSubmit = (e) => {
-        e.preventDefault();
-        console.log("Forum Data:", formData);
-      };
+
 
 return <div className="">
     <header>
+        {isVisible && (<div id = "TipJarDiv">
+            <div id = "TipJar">
+            <img src = "/TipJarBlank.PNG" id = "PopUpImg"/>
+            <button type = "button" id = "Close" onClick = {toggleDiv}> Close Tip Jar</button>
+            <div className = "text">
+                <h2 id = "Title"> Tip Jar</h2>
+                <form className = "TipInfo">
+                    <label htmlFor ="UsernameInput"> Your Username:</label>
+                    <input type = "text" id = "UsernameInput"/>
+                    <label htmlFor = "TippedUser">Recipient Username:</label>
+                    <input type = "text" id = "TippedUser"/>
+                    <label htmlFor = "TipAmount"> Tip Amount (in dollars):</label>
+                    <input type= "number" id = "TipAmount"/>
+                    <label htmlFor = "PayOption"> Payment Option:</label>
+                    <label htmlFor="paypal"> <input type="radio" id="paypal" value="paypal"/>PayPal</label>
+                    <label htmlFor= "venmo"><input type="radio" id="venmo" value="venmo"/> Venmo</label>
+                    <label htmlFor = "Message"> Message for Recipient:</label>
+                    <input type="text" id = "Message"/>
+                    <label htmlFor ="Confirm"> Confirm Information: <input type="checkbox" id = "Confirm"/></label>
+                    <br></br>
+                    <input type = "submit" value = "Send Tip!" id = "submit"/>
+                </form>
+            </div>
+        </div>
+        </div>)}
         <ul className = "topnav">
             <div id = "header"></div>
             <div className = "ProfileBox">
@@ -118,6 +146,7 @@ return <div className="">
         <div className = "reportGuidelines">
             <li> <a href = "/search/report" id = "GoToReport" className = "PageLink">Report Page</a></li>
             <li> <a href = "/search/guidelines" id = "GoToGuidelines" className = "PageLink">Guidelines</a></li>
+            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}><img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
         </div>
         </div>
         </div>
