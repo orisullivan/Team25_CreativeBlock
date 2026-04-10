@@ -23,6 +23,10 @@ ul.PageLinks li a
 {
     box-shadow: 5px 5px 5px var(--darkerColor);
 }
+.PageLink
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
 #loginPFP
 {
     border: 2px solid var(--darkerColor);

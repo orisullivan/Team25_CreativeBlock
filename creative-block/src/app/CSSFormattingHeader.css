@@ -24,7 +24,7 @@ ul.PageLinks li a:hover
 #GoToMaterialSearch
 {background-color: #d6efed;}
 ul.PageLinks li a:hover
-{background-color: #957dad; color: white;}
+{color: white;}
 li a:hover
 {cursor: url('/scissors1.png'), auto;}
 li a:hover:active

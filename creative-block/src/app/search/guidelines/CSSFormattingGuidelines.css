@@ -1,0 +1,66 @@
+:root
+{
+    --darkerColor: #5DAFA2;
+    --lighterColor: #AEEFC2;
+}
+body
+{
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+ul.topnav
+{
+    background-color: var(--lighterColor);
+}
+ul.PageLinks li a
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+.PageLink
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+#loginPFP
+{
+    border: 2px solid var(--darkerColor);
+}
+.clickToLogin
+{
+    background: none;
+}
+.PageLayout
+{
+    background-color: var(--lighterColor);
+}
+.AdSpace
+{
+    background-color: var(--lighterColor);
+}
+
+.GuidelinesTitle
+{
+    display: flex; padding: 5px; width: fit-content; background-color: aliceblue; align-items: center; justify-content: center; margin: auto; height: 100px;
+    margin-top: 5px;}
+.GuidelinesTitle h2
+{
+    margin: auto;
+}
+.guidelineContent
+{
+    display: flex; margin-top: none;
+}
+#ProhibitedActions
+{
+    list-style-type: none; height: fit-content; width: 50%; padding: 5px;
+}
+#RecommendedActions
+{
+    list-style-type: none; height: fit-content; width: 50%; padding: 5px;
+}

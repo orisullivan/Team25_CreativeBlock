@@ -115,6 +115,10 @@ return <div className="">
             <img src = "/ad3.png" id = "ad3"/>
             <img src = "/ad4.png" id = "ad4"/>
             <img src = "/ad5.png" id = "ad5"/>
+        <div className = "reportGuidelines">
+            <li> <a href = "/search/report" id = "GoToReport" className = "PageLink">Report Page</a></li>
+            <li> <a href = "/search/guidelines" id = "GoToGuidelines" className = "PageLink">Guidelines</a></li>
+        </div>
         </div>
         </div>
     </div>
