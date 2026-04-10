@@ -1,0 +1,52 @@
+#TipJar
+{
+    cursor: url('/Coin.PNG'), auto;
+}
+#TipJar :active
+{
+    cursor: url('/Coin.PNG'), auto;
+}
+
+#TipJar
+{
+    display: block;
+    margin: auto;
+    width: 380px;
+    height: 540px;
+    position: relative;
+
+}
+#PopUpImg
+{
+
+    height: 540px;
+}
+#Close
+{
+    position: absolute;
+    left: 140px;
+    top: 20px;
+}
+.text
+{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    height: 400px;
+    width: 320px;
+    justify-items: center;
+    font-family: Verdana, sans-serif;
+    cursor: url('/Coin.PNG'), auto;
+}
+.TipInfo
+{
+    width: 260px;
+    height: 320px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    cursor: url('/Coin.PNG'), auto;
+}
+
+
+

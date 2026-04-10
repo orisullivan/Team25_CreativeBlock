@@ -1,9 +1,7 @@
 import {readSheet} from "read-excel-file/node";
 import { parseData } from "read-excel-file/node";
 
-export default async function readExcelData(filename) {
-
-    const raw = await readSheet(filename);
+    const raw = await readSheet("src/app/search/materials/MaterialDatabase.xlsx");
     const schema = {
     id:{
         column: 'Material Id',
@@ -40,7 +38,7 @@ export default async function readExcelData(filename) {
       }
     }
     const results = await parseData(raw,schema);
-    const objects = [];
+    export const objects = [];
     const errors = [];
 
     let row = 1;
@@ -56,13 +54,3 @@ export default async function readExcelData(filename) {
   row++
 }
 
-if (errors.length > 0) {
-  for (const { error, row } of errors) {
-    console.error('Error in data row', row, 'column', error.column, ':', error.error, error.reason || '')
-  }
-} else {
-  console.log('Objects', objects)
-}
-
-return objects;
-  }

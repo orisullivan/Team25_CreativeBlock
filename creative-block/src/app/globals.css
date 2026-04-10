@@ -19,8 +19,21 @@ ul.PageLayout h2
 .AdSpace
 {list-style-type: none;  height: fit-content; width: 15svw; margin: 10px; border-style: dashed; border-width: 2px;}
 #AdTitle 
-{font-size: large; text-align: center; width: 190px; margin-bottom: 5px;
-}
+{font-size: large; text-align: center; width: 190px; margin-bottom: 5px;}
 .AdSpace img
 {margin-top: 5px; height: 180px; margin-left: 10px; border-radius: 0px;}
+.PageLink
+{display: flex;justify-content: center;align-items: center;color: black;padding: 20px;margin: 5px; text-decoration: none;border: dashed 2px #000;}
+.reportGuidelines li a:hover
+{background-color: #957dad;color: white;}
+#GoToReport
+{background-color: #DEB6AB;}
+#GoToGuidelines
+{background-color: #AEEFC2;}
+#TipJarDiv
+{width:100%; position: absolute;}
+#TipJarButton
+{background: none; border: none;}
+#TipJarButtonImg
+{width: 50%; height: 50%;}
 

@@ -1,0 +1,72 @@
+:root
+{
+    --darkerColor : #85586F;
+    --lighterColor : #DEB6AB;
+}
+body
+{
+    background-color: var(--darkerColor);
+}
+h1
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+h2
+{
+    text-shadow: 5px 5px 5px var(--darkerColor);
+}
+ul.topnav
+{
+    background-color: var(--lighterColor);
+}
+ul.PageLinks li a
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+.PageLink
+{
+    box-shadow: 5px 5px 5px var(--darkerColor);
+}
+#loginPFP
+{
+    border: 2px solid var(--darkerColor);
+}
+.clickToLogin
+{
+    background: none;
+}
+.PageLayout
+{
+    background-color: var(--lighterColor);
+}
+.AdSpace
+{
+    background-color: var(--lighterColor);
+}
+.PageTitle 
+{
+    margin: 10px; border-right: 2px dashed var(--darkerColor); justify-content: center; align-content: center;
+}
+.PageTitle h2
+{
+    width: fit-content; background: #fff; backdrop-filter: blur(20px); box-shadow: 0 0 10px rgba(0, 0, 0, .2); color: black; 
+transition: height .2s ease; justify-content: center; margin: 10px; padding: 10px;
+}
+#ReportTicket
+{
+    width: fit-content; height: 350px; margin-left: 125px; border-radius: 25px; border-style: dashed;
+}
+#Contents
+{
+    margin: 10px; display:block;
+}
+#Description
+{
+    height: 100px; width: 700px;
+}
+#submitButton
+{
+    width: 50%; height: 45px; background: var(--darkerColor); border: none; outline: none; border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1); font-size: 16px; color: black; font-weight: 600;
+    font-family: "Poppins", sans-serif; margin-top: 5px; margin-left: 25%
+}
