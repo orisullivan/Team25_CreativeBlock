@@ -121,7 +121,8 @@ export default function Material({ data }) {
 
                   <div className="input-box">
                     <label><b>Type of Material:</b></label>
-                    <select name="materialType" id="materialType" value={formData.materialType} onChange={handleChange}>
+                    <select name="materialType" id="materialType" 
+                    value={formData.materialType} onChange={handleChange}>
                       <option value=""></option>
                       <option value="yarn">Yarn</option>
                       <option value="fabric">Fabric</option>
@@ -132,7 +133,8 @@ export default function Material({ data }) {
 
                   <div className="input-box">
                     <label><b>Brand:</b></label>
-                    <select name="materialBrand" id="materialBrand" value={formData.materialBrand} onChange={handleChange}>
+                    <select name="materialBrand" id="materialBrand" 
+                    value={formData.materialBrand} onChange={handleChange}>
                       <option value=""></option>
                       <option value="lionBrand">Lion Brand</option>
                       <option value="bernat">Bernat</option>
@@ -143,7 +145,8 @@ export default function Material({ data }) {
 
                   <div className="input-box">
                     <label htmlFor="colors"><b>Color:</b></label>
-                    <select name="colors" id="colors" value={formData.colors} onChange={handleChange}>
+                    <select name="colors" id="colors" 
+                    value={formData.colors} onChange={handleChange}>
                       <option value=""></option>
                       <option value="red">Red</option>
                       <option value="orange">Orange</option>
@@ -189,10 +192,13 @@ export default function Material({ data }) {
             <img src="/ad4.png" id="ad4" />
             <img src="/ad5.png" id="ad5" />
             <div className = "reportGuidelines">
-            <li> <a href = "/search/report" id = "GoToReport" className = "PageLink">Report Page</a></li>
-            <li> <a href = "/search/guidelines" id = "GoToGuidelines" className = "PageLink">Guidelines</a></li>
-            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}><img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
-        </div>
+              <li> <a href = "/search/report" id = "GoToReport" 
+              className = "PageLink">Report Page</a></li>
+              <li> <a href = "/search/guidelines" id = "GoToGuidelines" 
+              className = "PageLink">Guidelines</a></li>
+              <button type = "button" id = "TipJarButton" onClick = {toggleDiv}>
+                <img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
+            </div>
           </div>
         </div>
       </div>

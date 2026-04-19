@@ -6,33 +6,33 @@ import { parseData } from "read-excel-file/node";
     id:{
         column: 'Material Id',
         type: Number
-    },
+      },
     MaterialName: {
-    column: 'Material Name',
-    type: String
-  },
+        column: 'Material Name',
+        type: String
+      },
     MaterialImage: {
-    column: 'Material Image',
-    type: String
-  },
-  Date: {
-    column: 'Date Added',
-    type: Date
-    // An example of using `oneOf`
-  },
-  MaterialType: {
-    column: 'Material Type',
-    type: String
-  },
-  MaterialBrand: {
+        column: 'Material Image',
+        type: String
+     },
+    Date: {
+        column: 'Date Added',
+       type: Date
+       // An example of using `oneOf`
+      },
+    MaterialType: {
+        column: 'Material Type',
+        type: String
+      },
+    MaterialBrand: {
         column: 'Material Brand',
         type: String
       },
-      MaterialColor: {
+    MaterialColor: {
         column: 'Material Color',
         type: String
       },
-      UsedIn: {
+    UsedIn: {
         column: '#Used In',
         type: Number
       }
@@ -44,13 +44,13 @@ import { parseData } from "read-excel-file/node";
     let row = 1;
 
     for (const { errors: errorsInRow, object } of results) {
-  if (errorsInRow) {
-    for (const error of errorsInRow) {
-      errors.push({ error, row })
+        if (errorsInRow) {
+        for (const error of errorsInRow) {
+          errors.push({ error, row })
+      }
+        } else {
+        objects.push(object)
+      }
+      row++
     }
-  } else {
-    objects.push(object)
-  }
-  row++
-}
 

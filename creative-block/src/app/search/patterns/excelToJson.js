@@ -10,30 +10,30 @@ export default async function readExcelData(filename) {
         type: Number
     },
     User:{
-      column: "Associated User",
-      type: String
-    },
+        column: "Associated User",
+        type: String
+      },
     PatternName: {
-    column: 'Listing Name',
-    type: String
-  },
+        column: 'Listing Name',
+        type: String
+      },
     PatternImage: {
-    column: 'Listing Image',
-    type: String
-  },
-  Date: {
-    column: 'Date Added',
-    type: Date
-  },
-  CraftType: {
-    column: 'Craft Type',
-    type: String
-  },
-  PatternType: {
+        column: 'Listing Image',
+        type: String
+      },
+    Date: {
+        column: 'Date Added',
+        type: Date
+      },
+    CraftType: {
+        column: 'Craft Type',
+        type: String
+    },
+    PatternType: {
         column: 'Pattern Type',
         type: String
       },
-      Difficulty: {
+    Difficulty: {
         column: 'Difficulty',
         type: String
       }
@@ -45,23 +45,23 @@ export default async function readExcelData(filename) {
     let row = 1;
 
     for (const { errors: errorsInRow, object } of results) {
-  if (errorsInRow) {
-    for (const error of errorsInRow) {
-      errors.push({ error, row })
+      if (errorsInRow) {
+        for (const error of errorsInRow) {
+          errors.push({ error, row })
+        }
+      } else {
+      objects.push(object)
+    }
+    row++
+  }
+
+  if (errors.length > 0) {
+    for (const { error, row } of errors) {
+      console.error('Error in data row', row, 'column', error.column, ':', error.error, error.reason || '')
     }
   } else {
-    objects.push(object)
+    console.log('Objects', objects)
   }
-  row++
-}
 
-if (errors.length > 0) {
-  for (const { error, row } of errors) {
-    console.error('Error in data row', row, 'column', error.column, ':', error.error, error.reason || '')
-  }
-} else {
-  console.log('Objects', objects)
-}
-
-return objects;
+  return objects;
   }

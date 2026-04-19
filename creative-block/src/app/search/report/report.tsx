@@ -71,7 +71,8 @@ return <div className="">
                         <option value = "TextAbuse"> Abusive Written Messages</option>
                         <option value = "Other"> Other </option>
                     </select>
-                    <br></br><label htmlFor="Description">If you selected other, or wish to provide more details of why you are reporting, please describe the incident here: </label>
+                    <br></br><label htmlFor="Description">If you selected other, or wish to provide more 
+                        details of why you are reporting, please describe the incident here: </label>
                     <input type="text" id = "Description"/>
                     <br></br><input type="submit" id ="submitButton" value = "Submit Ticket"/>
                 </form>
@@ -85,9 +86,12 @@ return <div className="">
             <img src = "/ad4.png" id = "ad4"/>
             <img src = "/ad5.png" id = "ad5"/>
         <div className = "reportGuidelines">
-            <li> <a href = "/search/report" id = "GoToReport" className = "PageLink">Report Page</a></li>
-            <li> <a href = "/search/guidelines" id = "GoToGuidelines" className = "PageLink">Guidelines</a></li>
-            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}><img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
+            <li> <a href = "/search/report" id = "GoToReport" 
+            className = "PageLink">Report Page</a></li>
+            <li> <a href = "/search/guidelines" id = "GoToGuidelines" 
+            className = "PageLink">Guidelines</a></li>
+            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}>
+                <img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
         </div>
         </div>
         </div>

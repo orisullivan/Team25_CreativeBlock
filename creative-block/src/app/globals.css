@@ -1,39 +1,44 @@
 html
-{cursor: url('/scissors1.png'), auto;}
+    {cursor: url('/scissors1.png'), auto;}
 html:active
-{cursor: url('/scissors2.png'), auto;}
+    {cursor: url('/scissors2.png'), auto;}
 li a:hover
-{cursor: url('/scissors1.png'), auto;}
+    {cursor: url('/scissors1.png'), auto;}
 li a:hover:active
-{cursor: url('/scissors2.png'), auto;}
+    {cursor: url('/scissors2.png'), auto;}
 *
-{border-radius: 25px; font-family:Verdana, Geneva, Tahoma, sans-serif; text-decoration: none;}
+    {border-radius: 25px; font-family:Verdana, Geneva, Tahoma, 
+    sans-serif; text-decoration: none;}
 #Page
-{display: inline-flex;}
+    {display: inline-flex;}
 ul.PageLayout
-{display : inline-flex; margin: 10px; padding: 0; width: 80svw; height: fit-content; border-style: dashed; border-width: 2px;}
+    {display : inline-flex; margin: 10px; padding: 0; width: 80svw; 
+        height: fit-content; border-style: dashed; border-width: 2px;}
 ul.PageLayout h1
-{font-size: xxx-large;}
+    {font-size: xxx-large;}
 ul.PageLayout h2
-{font-size: large;}
+    {font-size: large;}
 .AdSpace
-{list-style-type: none;  height: fit-content; width: 15svw; margin: 10px; border-style: dashed; border-width: 2px;}
+    {list-style-type: none;  height: fit-content; width: 15svw; 
+        margin: 10px; border-style: dashed; border-width: 2px;}
 #AdTitle 
-{font-size: large; text-align: center; width: 190px; margin-bottom: 5px;}
+    {font-size: large; text-align: center; width: 190px; margin-bottom: 5px;}
 .AdSpace img
-{margin-top: 5px; height: 180px; margin-left: 10px; border-radius: 0px;}
+    {margin-top: 5px; height: 180px; margin-left: 10px; border-radius: 0px;}
 .PageLink
-{display: flex;justify-content: center;align-items: center;color: black;padding: 20px;margin: 5px; text-decoration: none;border: dashed 2px #000;}
+    {display: flex;justify-content: center;align-items: center;
+        color: black;padding: 20px;margin: 5px; text-decoration: none;
+        border: dashed 2px #000;}
 .reportGuidelines li a:hover
-{background-color: #957dad;color: white;}
+    {background-color: #957dad;color: white;}
 #GoToReport
-{background-color: #DEB6AB;}
+    {background-color: #DEB6AB;}
 #GoToGuidelines
-{background-color: #AEEFC2;}
+    {background-color: #AEEFC2;}
 #TipJarDiv
-{width:100%; position: absolute;}
+    {width:100%; position: absolute;}
 #TipJarButton
-{background: none; border: none;}
+    {background: none; border: none;}
 #TipJarButtonImg
-{width: 50%; height: 50%;}
+    {width: 50%; height: 50%;}
 

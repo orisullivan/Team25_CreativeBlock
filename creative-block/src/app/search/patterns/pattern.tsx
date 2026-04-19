@@ -116,7 +116,8 @@ export default function Pattern({ data }) {
             <h2>Narrow Your Search Here!</h2>
             <div className="input-box">
                 <label><b>Difficulty:</b></label>
-                <select name="difficulty" id="difficulty" value={formData.difficulty} onChange={handleChange}>
+                <select name="difficulty" id="difficulty" value={formData.difficulty} 
+                onChange={handleChange}>
                     <option value=""></option>
                     <option value="beginner"> Beginner </option>
                     <option value="intermediate"> Intermediate </option>
@@ -125,7 +126,8 @@ export default function Pattern({ data }) {
             </div>
             <div className="input-box">
                 <label><b>Type of Craft:</b></label>
-                <select name="craftType" id="craftType" value={formData.craftType} onChange={handleChange}>
+                <select name="craftType" id="craftType" value={formData.craftType} 
+                onChange={handleChange}>
                     <option value=""></option>
                     <option value="crochet"> Crochet </option>
                     <option value="knitting"> Knitting </option>
@@ -135,7 +137,8 @@ export default function Pattern({ data }) {
             </div>
             <div className="input-box">
                 <label><b>Type of Pattern:</b></label>
-                <select name="patternType" id="patternType" value={formData.patternType} onChange={handleChange}>
+                <select name="patternType" id="patternType" value={formData.patternType} 
+                onChange={handleChange}>
                     <option value=""></option>
                     <option value="clothing"> Clothing </option>
                     <option value="homeware"> Homeware</option>
@@ -172,9 +175,12 @@ export default function Pattern({ data }) {
             <img src = "/ad4.png" id = "ad4"/>
             <img src = "/ad5.png" id = "ad5"/>
             <div className = "reportGuidelines">
-            <li> <a href = "/search/report" id = "GoToReport" className = "PageLink">Report Page</a></li>
-            <li> <a href = "/search/guidelines" id = "GoToGuidelines" className = "PageLink">Guidelines</a></li>
-            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}><img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
+            <li> <a href = "/search/report" id = "GoToReport" 
+            className = "PageLink">Report Page</a></li>
+            <li> <a href = "/search/guidelines" id = "GoToGuidelines" 
+            className = "PageLink">Guidelines</a></li>
+            <button type = "button" id = "TipJarButton" onClick = {toggleDiv}>
+                <img src = "/TipJar.PNG" id = "TipJarButtonImg"/></button>
         </div>
         </div>
         </div>

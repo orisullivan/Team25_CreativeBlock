@@ -9,7 +9,6 @@ import "../../TipJarFormatting.css"
 import React, { useEffect, useState, useMemo } from "react";
 import { SignInDirect } from "@/components/signin-redirect";
 import { Entry } from "./entry.jsx"
-import { TipJar } from "../../../../public/TipJarPopUp"
 
 export default function ForumPage( {data} ){
     const [isVisible, setIsVisible] = useState(false);
