@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html class = "PatternHTML">
+    <head>
+        <title> The Creative Block </title>
+        <link rel = "stylesheet" href = "CSSFormatting.css">
+        <link rel = "stylesheet" href = "CSSFormattingPatternSearching.css">
+        <link rel = "stylesheet" href = "CSSFormattingIndividualPages.css">
+        <script src = "BaseScript.js"></script>
+    </head>
+    <header>
+        <div id = "header"></div>
+    </header>
+    <body class = "PatternBody">
+        <div id = "Page">
+        <ul class = "PageLayout">
+            <div class = "BackAndEntry">
+                <a href = "PatternSearchingPage.html"><button type = "button" id = "BackButton"> <= Return to Pattern Search Page </button></a>
+                <div class = "EntryDisplay">
+                    <div class = "EntryHeader">
+                        <img src = "funy squirrel.webp" id = "EntryDisplayImg"> 
+                        <div class = "TitleAuthorDate">
+                            <h1 class = "EntryDisplayTitle"> Test Title <button type = "button" id = "FavButton" data-toggle = "unfavorited"> <img src = "empty star.png" id = "FavButtonImg"></button></h1>
+                            <div class = "AuthorAndTip">
+                                <h2 class = "AuthorName"> By: Author Username</h2> 
+                                <button type = "button" id = "TipJarButton" onclick= showTipJar()><img src = "TipJar.PNG" id = "TipJarButtonImg"></button>
+                            </div>
+                            <h2 class = "DateAdded"> Added On: 3/26/2026 </h2>
+                        </div>
+                    </div>
+                    <div class = "EntryDisplayContent">
+                        <h2 class = "PatternInfoTitle"> Pattern Information:</h2>
+                        <p class = "PatternType"> Pattern Type: </p>
+                        <p class = "Recommended"> Recommended For: </p>
+                        <p class = "TimeToDo"> Approximate Time to Complete: </p>
+                        <p class = "MaterialsUsed"> Materials Used: </p>
+                        <p class = "Download"> Download this Pattern!: </p>
+                    </div>
+                    <div class = "RatingSection">
+                        <h2 class = "RatingSectionTitle"> Pattern Rating: </h2>
+                        <div class = "Rating">
+                            <div class = "RaterInfo">
+                                <img src = "guest pfp.webp" id = "RaterPFP">
+                                <p id = "RaterUser"> Username</p>
+                            </div>
+                            <div class = "RatingInfo">
+                                <p id = "Rating"> Rated: </p>
+                                <p id = "Comments"> Comments:</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            
+        </ul>
+        <div class = "AdSpace">
+            <h2 id = "AdTitle"> Advertisements </h2>
+            <img src = "ad1.png" id = "ad1">
+            <img src = "ad2.png" id = "ad2">
+            <img src = "ad3.png" id = "ad3">
+            <img src = "ad4.png" id = "ad4">
+            <img src = "ad5.png" id = "ad5">
+        </div>
+        </div>
+        <script src = "IndividualPageScript.js"></script>
+        <script src = "TipJarScript.js"></script>
+    </body>
+    
+</html>
